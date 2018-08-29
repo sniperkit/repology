@@ -1,0 +1,129 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- { setname: x264,                     name: [libx264,lib264-142,libx264-142] }
+- { setname: x264,                     name: [libx264-10bit,x264-10bit], addflavor: 10bit }
+- { setname: x264,                     name: libx264-all, addflavor: all }
+- { setname: x264,                     name: x264-encoder, addflavor: encoder }
+- { setname: x264,                     name: libx264-devel, weak_devel: true }
+- { setname: x264,                     name: x264-devel, weak_devel: true }
+- { setname: x265,                     name: libx265 }
+- { setname: x2goclient,               name: x2goclient-qt5, addflavor: true }
+- { setname: x2vnc,                    name: x2vnc-no-xinerama, addflavor: true }
+- { setname: x42-plugins,              name: [lv2-x42-plugins,x42-plugins-lv2] }
+- { setname: xa,                       name: xa65 }
+- { setname: xalan-c,                  name: [xalanc,xalan-c++] }
+- { setname: xandikos,                 name: "python:xandikos" }
+- { setname: xapian-bindings,          name: "lua:xapian", addflavor: lua }
+- { setname: xapian-bindings,          name: "perl:xapian", addflavor: perl }
+- { setname: xapian-bindings,          name: "python:xapian", addflavor: python }
+- { setname: xapian-bindings,          name: "ruby:xapian", addflavor: ruby }
+- { setname: xapian-bindings,          name: [xapian-tcl-bindings,tcl-xapian], addflavor: tcl }
+- { setname: xapian-bindings,          namepat: "php[0-9]*:xapian", addflavor: php }
+- { setname: xapian-bindings,          namepat: "xapian[0-9._-]*-bindings[0-9._-]*" }
+- { setname: xapian-bindings,          namepat: xapian-bindings-(perl|python), addflavor: $1 }
+- { setname: xapian-core,              namepat: "xapian[0-9._-]*(-core[0-9._-]*)?" }
+- { setname: xapian-core,              name: libxapian }
+- { setname: xapian-omega,             namepat: "xapian-omega[0-9._-]*" }
+- { setname: xar,                      name: xar-mackyle }
+- { setname: xarchiver,                name: [xarchiver-assume-name,xarchiver-gtk2], addflavor: true }
+- { setname: xarchiver,                name: xfce4-xarchiver }
+- { setname: xastir,                   name: xastir-fix, addflavor: fix }
+- { setname: xaw3d,                    name: libxaw3d }
+- { setname: xawtv,                    name: xawtv4 }
+- { setname: xbase,                    name: [libxbase,xbase64] }
+- { setname: xcb-proto,                name: libxcbutil-proto }
+- { setname: xcb-proto,                name: xorg-xcbproto-devel, weak_devel: true }
+- { setname: xcb-util$1,               namepat: "libxcbutil(.*)" }
+- { setname: xcb-util,                 name: xcb-util036 }
+- { setname: xcb-util-renderutil,      name: [lib32-xcb-util-renderutil,libxcb-render-util,xorg-xcb-render-util] }
+- { setname: xcb-util-xrm,             name: xcb-utils-xrm } # XXX: problem
+- { setname: xchm,                     name: xchm-wx3, addflavor: wx3 }
+- { setname: xdelta,                   name: [xdelta1,xdelta3] }
+- { setname: xdg-utils,                name: [xdg-utils-mimeo,xdg-utils-no-open,xdg-utils-patched,xdg-utils-slock] }
+- { setname: xdot,                     name: ["python:xdot","python:xdot-06"] }
+- { setname: xerces-c,                 namepat: "(?:lib)?xerces-?c[0-9.+-]*" }
+- { setname: xerces-j,                 name: xerces, family: [openbsd,slackbuilds] }
+- { setname: xerces-j,                 name: xerces, family: gentoo, category: dev-java }
+- { setname: xerces-j,                 namepat: "(?:lib)?xerces2?-?j(?:ava)?[0-9-]*" }
+- { setname: xfce4-dict,               name: xfce4-dict-plugin, family: freebsd }
+- { setname: xfce4-whiskermenu-plugin, name: [xfce4-panel-plugin-whiskermenu] }
+- { setname: xfce4-whiskermenu-plugin, name: [xfce4-whiskermenu-plugin-gtk2,xfce4-whiskermenu-plugin-gtk3], addflavor: true }
+- { setname: xfconf,                   name: [xfce4-conf,xfce4-config,xfconf4.12,xfce4-conf,xfce4-config] }
+- { setname: xfconf,                   name: libxfconf, addflavor: lib }
+- { setname: xfconf,                   name: xfconf-devel, weak_devel: true }
+- { setname: xfconf,                   name: xfconf-gtk3, addflavor: gtk3 }
+- { setname: xfdesktop,                name: [xfdesktop4,xfce4-desktop] }
+- { setname: xfdesktop,                name: xfdesktop-devel, weak_devel: true }
+- { setname: xfdesktop,                name: xfdesktop-gtk3, addflavor: gtk3 }
+- { setname: xine-lib,                 name: [xine-lib-1.2,xine-lib1.2,libxine,libxine2] }
+- { setname: xine-ui,                  name: [xine,xine-ui2] }
+- { setname: xkeyboard-config,         name: [xkeyboard-config-chromebook,xkeyboard-config-hhk,xkeyboard-config-rub], addflavor: true }
+- { setname: xmbmon,                   name: mbmon }
+- { setname: xmds,                     name: xmds-doc, addflavor: doc }
+- { setname: xmds,                     name: xmds2 }
+- { setname: xml2rfc,                  name: ["python:xml2rfc",xml2rfc-python] }
+- { setname: xmlrpc-c,                 name: xmlrpc-c-ss } # "super stable"
+- { setname: xmlsec,                   name: [xmlsec1,libxmlsec1] }
+- { setname: xmlsec,                   name: xmlsec-docs, addflavor: docs }
+- { setname: xmltooling,               name: xmltooling-c }
+- { setname: xmobar,                   name: [xmobar-alsa,xmobar-volume,"haskell:xmobar"] }
+- { setname: xmonad,                   name: "haskell:xmonad" }
+- { setname: xmoto,                    name: x-moto }
+- { setname: xmrig,                    name: xmrig-donateless, addflavor: donateless }
+- { setname: xonotic,                  name: xonotic-data, addflavor: true }
+- { setname: xorg-server$1,            namepat: "xorg-server[0-9.]+(-.+)?" } # XXX: should be before large xorg-server rule at the end
+- { setname: xorg-server$1,            namepat: "xorg-server(-.+)?-dev", ignore: true } # XXX: should be before large xorg-server rule at the end
+- { setname: xorg-server,              name: modular-xorg-server }
+- { setname: xorg-server,              namepat: "xorg-server-lts-[a-z]+" }
+- { setname: xournal,                  name: xournal-gtk3, addflavor: gtk3 }
+- { setname: xpdf,                     name: [xpdf3,xpdf4] }
+- { setname: xpilot-ng,                name: [xpilot-ng-client, xpilot-ng-server], addflavor: true }
+- { setname: xplayer-plparser,         name: libxplayer-plparser }
+- { setname: xproxymanagementprotocol, name: xproxymngproto }
+- { setname: xrdb,                     name: xorg-xrdb-mcpp, addflavor: mcpp }
+- { setname: xrdp,                     name: xrdp-devel, weak_devel: true }
+- { setname: xsel,                     name: xsel-conrad }
+- { setname: xtrans,                   name: xorg-xtransproto } # ravenports manually split this out of xtrans
+- { setname: xtrans,                   name: xtrans-devel, weak_devel: true }
+- { setname: xulrunner,                name: xulrunner-devel, weak_devel: true }
+- { setname: xulrunner,                namepat: "xulrunner[0-9.-]+" }
+- { setname: xvidcore,                 name: [xvid,libxvid] }
+#- { setname: xvst,                     name: xvideoservicethief }
+- { setname: xz,                       name: [liblzma,xz-utils,xz_utils], addflavor: true }
+
+- name:
+    - xorg-dmx
+    - xorg-server-bug865
+    - xorg-server-common
+    - xorg-server-common-mir
+    - xorg-server-common-nosystemd
+    - xorg-server-hwcursor-gamma
+    - xorg-server-hwe-16.04
+    - xorg-server-mir
+    - xorg-server-nosystemd
+    - xorg-server-systemd
+    - xorg-server-xdmx
+    - xorg-server-xdmx-mir
+    - xorg-server-xdmx-nosystemd
+    - xorg-server-xephyr
+    - xorg-server-xephyr-mir
+    - xorg-server-xephyr-nosystemd
+    - xorg-server-xnest
+    - xorg-server-xnest-mir
+    - xorg-server-xnest-nosystemd
+    - xorg-server-xvfb
+    - xorg-server-xvfb-mir
+    - xorg-server-xvfb-nosystemd
+    - xorg-server-xwayland
+    - xorg-server-xwayland-mir
+    - xorg-server-xwayland-nosystemd
+  setname: xorg-server
+  addflavor: true
+
+- name:
+    - xorg-server-devel
+    - xorg-server-devel-mir
+    - xorg-server-devel-nosystemd
+  setname: xorg-server
+  addflavor: true
+  weak_devel: true

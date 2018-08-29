@@ -1,0 +1,142 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- { setname: m.a.r.s.,                 name: [marsshooter,mars-shooter] }
+- { setname: m17n-db,                  name: libm17n-db }
+- { setname: maelstrom,                name: maelstrom-sdl }
+- { setname: magic-wormhole-transit-relay, name: "python:magic-wormhole-transit-relay" }
+- { setname: magit,                    name: [magit-emacs25,emacs-magit] }
+- { setname: magit,                    name: [magit-svn,emacs-magit-git], ignore: true }
+- { setname: mailman,                  name: mailman3 }
+- { setname: mailman,                  name: mailman3-core, addflavor: core }
+- { setname: mailx,                    name: bsd-mailx }
+- { setname: make,                     name: [gmake,gnumake,make-3.81,make3] }
+- { setname: make,                     name: [make-dfsg,make-doc-non-dfsg], addflavor: true }
+- { setname: make,                     name: [gnuwin32-make], addflavor: true }
+- { setname: mandoc,                   name: mdocml } # mdocml is an old name (schwarze@openbsd.org)
+- { setname: manpages,                 name: [man-pages,linux-man-pages,linux-manpages] }
+- { setname: marathon-evil,            name: marathon-evil-data }
+- { setname: mariadb,                  namepat: "(lib)?mariadb[0-9.-]*(clients?|server)?[0-9.-]*", addflavor: [$1,$2] }
+- { setname: mariadb,                  name: [libmariadbclient-mainline-noconflict,mariadb-clients-mainline-noconflict], addflavor: true }
+- { setname: mariadb,                  name: [mariadb-galera,mariadb-mainline-noconflict], addflavor: true }
+- { setname: mariadb-mytop,            name: mytop, family: arch }
+- { setname: mariadb-mytop,            name: "mytop-10.3" }
+- { setname: mariadb-mytop,            name: mytop-mainline-noconflict, addflavor: true }
+- { setname: master-pdf-editor,        name: [masterpdfeditor,masterpdfeditor4] }
+- { setname: master-pdf-editor,        name: masterpdfeditor-qt4, addflavor: qt4 }
+- { setname: mastodon,                 name: mastodon-docker, addflavor: docker }
+- { setname: mate-control-center,      name: mate-control-center-dev }
+- { setname: mate-control-center,      name: mate-control-center-gtk2, addflavor: gtk2 }
+- { setname: mathics,                  name: "python:mathics" }
+- { setname: matio,                    name: libmatio }
+- { setname: mattermost,               name: [mattermost-server, mattermost-webapp], addflavor: true }
+- { setname: matrix-synapse,           name: "python:matrix-synapse" }
+- { setname: maven-shell,              name: mvnsh }
+- { setname: mbedtls,                  name: mbedtls10 }
+- { setname: mbedtls,                  name: mbedtls-apache, addflavor: true }
+- { setname: mc,                       name: [mc-contrib,midnight-commander,midnightcommander] }
+- { setname: mc,                       name: mc46 }
+- { setname: mcron,                    name: mcron2 }
+- { setname: md5deep,                  name: hashdeep }
+- { setname: mda-lv2,                  name: mda.lv2 }
+- { setname: mdp,                      name: gpg-mdp } # different from mdp-src, split in 850
+- { setname: mdp,                      name: mdp-src } # different from gpg-mdp, split in 850
+- { setname: mdds,                     namepat: "mdds[0-9._-]+" }
+- { setname: meandmyshadow,            name: me-and-my-shadow }
+- { setname: meanwhile,                name: libmeanwhile }
+- { setname: mediainfo,                name: media-info }
+- { setname: mediawiki,                name: mediawiki-lts }
+- { setname: mediawiki,                namepat: "mediawiki[0-9._-]+" }
+- { setname: mednaffe,                 name: mednaffe-gtk2 }
+- { setname: meld,                     name: meld-dev, ignore: true }
+- { setname: meld,                     name: meld-gtk2 }
+- { setname: memphis,                  namepat: "libmemphis[0-9._-]*"  }
+- { setname: memtest86+,               name: memtestplus }
+- { setname: menulibre,                name: "python:menulibre" }
+- { setname: mercator,                 name: libmercator }
+- { setname: mercurial,                name: [hg,"python:mercurial"] }
+- { setname: mercurial,                name: [hgweb, mercurial-full], addflavor: true }
+- { setname: mesa,                     namepat: "mesa-lts-.*" }
+- { setname: mesa-demos,               name: [mesa-demo,mesademos] }
+- { setname: meson,                    name: ["python:meson",meson-internal,meson-testsuite], addflavor: true }
+- { setname: meters.lv2,               name: meters-lv2 }
+- { setname: mgltools,                 namepat: "mgltools-.*", family: debuntu }
+- { setname: mhash,                    name: libmhash }
+- { setname: midi-matrix.lv2,          name: midi-matrix-lv2 }
+- { setname: midori,                   name: [midori-granite,midori-gtk2,midori-no-zeitgeist], addflavor: true }
+- { setname: minetest,                 name: [minetest-common,minetest-server], addflavor: true }
+- { setname: minetest,                 name: minetest-git-leveldb, addflavor: true, ignore: true }
+- { setname: miniserve,                name: "rust:miniserve" }
+- { setname: minivmac,                 namepat: "minivmac-(.*)", addflavor: $1 }
+- { setname: minixml,                  name: libmxml }
+- { setname: minpack,                  name: libcminpack }
+- { setname: mirrormagic,              name: mirrormagic-sdl }
+- { setname: mixxx,                    name: mixxx20 }
+- { setname: mixxx,                    name: mixxx-qt5, addflavor: true }
+- { setname: moc,                      name: moc-pulse, addflavor: pulse }
+- { setname: moc,                      name: mocp }
+- { setname: monotone,                 name: monotone-server, addflavor: true }
+- { setname: moodle,                   namepat: "moodle[0-9._-]+" }
+- { setname: moony.lv2,                name: moony-lv2 }
+- { setname: moon-lander,              name: moonlander, family: [freebsd,openbsd] }
+- { setname: mosquitto,                name: libmosquitto }
+- { setname: mouseserver,              name: necta-wifi-mouse }
+- { setname: mozilla-dicts,            namepat: "mozilla-dicts-.*", family: openbsd }
+- { setname: mozjs,                    name: libmozjs }
+- { setname: mozjs,                    namepat: "mozjs[0-9._-]+" }
+- { setname: mpc,                      name: [mpd-mpc,mpclient] }
+- { setname: mpd,                      name: [mpd-light,mpd-light-pulse,mpd-minimal,mpd-server-minimal,mpd-sidplay], addflavor: true }
+- { setname: mpfr,                     name: [mpfr3,mpfr4,libmpfr] }
+- { setname: mpich,                    name: mpich-default }
+- { setname: mpich,                    namepat: "mpich(?:-clang|-gcc|-llvm)?[0-9._-]*" }
+- { setname: mpich,                    namepat: "mpich-devel(?:-clang|-gcc|-llvm)?[0-9._-]*", weak_devel: true }
+- { setname: ms-gsl,                   name: [guidelines-support-library,microsoft-gsl,microsoft_gsl,c++gsl] }
+- { setname: msgpack,                  name: [msgpack-c,msgpack_c_cpp,libmsgpack,msgpack1] } # c/cpp by default
+- { setname: mstflint,                 name: mstflint4 }
+- { setname: msynctool,                namepat: "msynctool[0-9]+" }
+- { setname: mtdev,                    name: libmtdev }
+- { setname: multivalent,              name: [multivalent-tool-pdf,multivalent-pdf-tools] }
+- { setname: munin,                    namepat: munin-(master|node|server|common), addflavor: $1 }
+- { setname: muparser,                 namepat: "libmuparser[0-9._-]*" }
+- { setname: mutt,                     name: mutt-devel, weak_devel: true }
+- { setname: mutt,                     name: [mutt-lite,mutt14,mutt14-lite,mutt-patched,mutt-slang,mutt-kiss] }
+- { setname: mx,                       name: libmx }
+- { setname: mygui,                    namepat: "mygui-(docs|dummy|gl|opengl|ogre[0-9._-]*)", addflavor: $1 }
+- { setname: myrepos,                  name: mr }
+- { setname: mysql,                    namepat: "libmysqlclient[0-9.-]*" }
+- { setname: mysql,                    namepat: "mysql-clients[0-9.-]*" }
+- { setname: mysql,                    namepat: "mysql[0-9.-]*(?:-client|-server)?" }
+- { setname: mysql-connector-c++,      name: libmysqlconnectorcpp }
+- { setname: mysql-connector-c++,      namepat: "mysql[0-9]*-connector-cpp" }
+- { setname: mysql_fdw,                namepat: "(postgresql[0-9._-]*)-mysql[_-]fdw", addflavor: $1 }
+
+- setname: mesa
+  name:
+    - libosmesa
+    - libva-mesa-driver
+    - libva-mesa-driver-noglvnd
+    - libva-mesa-driver-vanilla
+    - mesa+dri1
+    - mesa-dri
+    - mesa-dri1-drivers
+    - mesa-headers
+    - mesa-hybris
+    - mesa-hybris-libgl
+    - mesa-hybris-wayland-egl
+    - mesa-libgl-noglvnd
+    - mesa-libgl-vanilla
+    - mesa-libs
+    - mesa-noglu
+    - mesa-noglvnd
+    - mesa-nowayland
+    - mesa-progs
+    - mesa-utils
+    - mesa-vanilla
+    - mesa-vdpau
+    - mesa-vdpau-noglvnd
+    - mesa-vdpau-vanilla
+    - mesa3d
+    - mesalib
+    - mesalib7
+    - opencl-mesa
+    - opencl-mesa-noglvnd
+    - opencl-mesa-vanilla

@@ -1,0 +1,26 @@
+# vim: tabstop=29 expandtab softtabstop=29
+
+- { name: ocp, wwwpart: maxsatula, setname: ocp-oracle-copy-tool }
+- { name: ocp, wwwpart: cubic, setname: ocp-open-cubic-player }
+- { name: ocp, category: [media-sound,audio,media-sound], setname: ocp-open-cubic-player }
+- { name: ocp, warning: "please classify me" }
+
+- { name: omega, wwwpart: alcyone, setname: omega-rpg }
+- { name: omega, category: games, setname: omega-rpg }
+- { name: omega, wwwpart: sheard, setname: omega-lang }
+- { name: omega, wwwpart: xapian, setname: xapian-omega }
+- { name: omega, warning: "please classify me" }
+
+- { name: omi, setname: omi-ftpmirror, category: ftp } # vs. Open Management Infrastructure
+
+- { name: openal, family: [pkgsrc,chocolatey,freebsd,macports], setname: openal-creative }
+- { name: openal, setname: openal-soft } # most openal's are openal-soft, even if they erroneously list openal.org as a website
+
+- { name: openbox-themes, wwwpart: openbox.org, setname: openbox, addflavor: themes } # slitaz
+
+- { name: orrery, ruleset: maemo, setname: orrery-maemo }
+
+- { name: overpass, wwwpart: [font,redhatbrand], setname: "fonts:overpass" }
+- { name: overpass, wwwpart: api, setname: "python:overpass" }
+- { name: overpass, category: [fonts,media-fonts], setname: "fonts:overpass" }
+- { name: overpass, warning: "please classify me" }

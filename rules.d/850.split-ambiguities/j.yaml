@@ -1,0 +1,19 @@
+# vim: tabstop=29 expandtab softtabstop=29
+
+- { name: jack,                        wwwpart: unix-ag.org, setname: jack-cd-ripper }
+- { name: jack,                        verpat: "3\\.1\\.1.*", setname: jack-cd-ripper }
+- { name: jack,                        verpat: "0\\.1[0-9][0-9].*", setname: jack1 }
+- { name: jack,                        verpat: "1.*", setname: jack2 }
+- { name: jack,                        warning: "please classify me" }
+
+- { name: jade,                        wwwpart: jade.cselt.it, setname: jade-java }
+
+- { name: jpeg,                        verpat: "[01]\\..*", setname: libjpeg-turbo }
+
+- { name: julius, wwwpart: [julius.sourceforge.jp,julius-speech], setname: julius-speech }
+- { name: julius, wwwpart: bvschaik, setname: julius-caesar3 }
+- { name: julius, category: games, setname: julius-caesar3 }
+- { name: julius, warning: "please classify me" }
+
+- { name: js, wwwpart: mozilla, setname: spidermonkey }
+- { name: js, ver: ["1.7.0","1.8.5","17.0.0","1.70","1.85"], setname: spidermonkey } # 1.70 and 1.85 are incorrect versions and are ignored later

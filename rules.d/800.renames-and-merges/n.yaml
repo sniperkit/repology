@@ -1,0 +1,97 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- { setname: namazu,                   name: namazu2 }
+- { setname: nawk,                     name: awk, family: homebrew }
+- { setname: nbd,                      name: nbd-server }
+- { setname: ncbi-blast+,              name: ncbi-blast-plus }
+- { setname: ncurses,                  name: [ncurses-full,ncurses-with-gpm,ncursesw,ncurses-nohex], addflavor: true }
+- { setname: ncurses,                  name: [ncurses5,ncurses5-compat-libs,ncurses60] }
+- { setname: ndctl,                    name: libndctl }
+- { setname: ndpi,                     name: libndpi }
+- { setname: neomutt,                  name: neomutt-backends, addflavor: backends }
+- { setname: neon,                     name: neon-threadsafe, addflavor: true }
+- { setname: neon,                     namepat: "(?:lib)?neon[0-9._-]*" }
+- { setname: neovim,                   name: neovim-unwrapped, addflavor: true }
+- { setname: netatalk,                 namepat: "netatalk[0-9.-]+" }
+- { setname: netbeans,                 namepat: "netbeans-.*", family: gentoo }
+- { setname: netcat-openbsd,           name: openbsd-netcat }
+- { setname: netcdf,                   namepat: "netcdf(?:[0-9._-]*)?(-gnu.*hpc)?", addflavor: $1 }
+- { setname: netcdf,                   name: netcdf-devel, weak_devel: true }
+- { setname: netcdf,                   name: [netcdf-mpi,netcdf-openmpi,netcdf-parallel-openmpi], addflavor: true }
+- { setname: netcdf-cxx,               namepat: "netcdf-cxx(?:[0-9._-]*)(-gnu.*hpc)?", addflavor: $1 }
+- { setname: netcdf-cxx,               name: netcdf-cxx-legacy }
+- { setname: netcdf-fortran,           namepat: "netcdf-fortran(?:[0-9._-]*)(-gnu.*hpc)?", addflavor: $1 }
+- { setname: nethack,                  name: [nethack-all,nethack-lib,nethack-patch,nethack-qt,nethack-tty,nethack-x11] }
+- { setname: nethack,                  namepat: "nethack[._-]*(?:[23][0-9._-]*)?" }
+- { setname: netlogo,                  name: netlogo-bin, addflavor: bin }
+- { setname: netpbm,                   name: libnetpbm }
+- { setname: netpbm,                   name: [netpbm-free,netpbm-debug], addflavor: true }
+- { setname: nettle,                   name: [libnettle,nettle4] }
+- { setname: networkmanager,           name: network-manager }
+- { setname: networkmanager,           name: networkmanager-elogind, addflavor: elogind }
+- { setname: networkmanager,           name: networkmanager-consolekit, addflavor: consolekit }
+- { setname: networkmanager,           name: networkmanager-consolekit-noscan, addflavor: consolekit-noscan }
+- { setname: network-manager-applet,   name: network-manager-applet-gtk2, addflavor: gtk2 }
+- { setname: network-manager-applet,   name: network-manager-applet-indicator, addflavor: indicator }
+- { setname: network-manager-applet,   name: network-manager-applet-passwordstore, addflavor: passwordstore }
+- { setname: network-manager-applet,   name: networkmanager-applet }
+- { setname: network-manager-applet,   name: networkmanager-applet-gtk, addflavor: gtk }
+- { setname: neverball,                name: neverball-data, addflavor: data }
+- { setname: newsbeuter,               name: newsbeuter-dev, ignore: true }
+- { setname: newsbeuter,               name: newsbeuter2.8 }
+- { setname: newt,                     name: [libnewt,newt52] }
+- { setname: nghttp2,                  name: libnghttp2 }
+- { setname: nginx,                    name: [nginx-devel,nginx-mainline] }
+- { setname: nginx,                    name: [nginx-full,nginx-mainline-full], addflavor: full }
+- { setname: nginx,                    name: [nginx-libressl,nginx-mainline-libressl], addflavor: libressl }
+- { setname: nginx,                    name: nginx-custom, addflavor: aurcrap1 }
+- { setname: nginx,                    name: nginx-custom-dev, addflavor: aurcrap2 }
+- { setname: nginx,                    name: nginx-lite, addflavor: lite }
+- { setname: nginx,                    name: nginx-mainline-boringssl, addflavor: boringssl }
+- { setname: nginx,                    name: nginx-rtmp, addflavor: rtmp }
+- { setname: ngspice,                  name: [libngspice,ng-spice,ngspice-docs,ngspice_rework,ngspice-shared], addflavor: true }
+- { setname: nicotine+,                name: [nicotine,nicotine-plus] }
+- { setname: ninja,                    name: ninja-build }
+- { setname: ninja-irc,                name: irc-ninja }
+- { setname: nixnote2,                 name: nixnote }
+- { setname: no-more-secrets,          name: nms }
+- { setname: noteye,                   name: necklace-of-the-eye }
+- { setname: notion,                   name: notion-3 }
+- { setname: notpacman,                name: not-pacman }
+- { setname: nova-agent,               name: rax-nova-agent }
+- { setname: npapi-vlc,                name: npapi-vlc-gtk3 }
+- { setname: npm,                      namepat: "npm[0-9._-]+" }
+- { setname: npth,                     name: libnpth }
+- { setname: nss-ldap,                 name: libnss-ldap }
+- { setname: ntfs-3g,                  name: ["fusefs:ntfs","fusefs:ntfs-3g",ntfs-3g-fuse,ntfs-3g-ntfsprogs,ntfs-3g_ntfsprogs,ntfsprogs,ntfs3g,libntfs-3g,libntfs] }
+- { setname: ntfs-3g,                  name: [ntfs-3g-ar,ntfs-3g-advanced], addflavor: ar }
+- { setname: ntfs-3g,                  name: ntfs-3g-wimlib-patched, addflavor: wimlib }
+- { setname: numptyphysics,            name: numpty-physics }
+- { setname: nvidia,                   namepat: "(linux[0-9]+)-nvidia[x0-9._-]*", addflavor: $1 }
+#- { setname: nvidia,                   namepat: "nvidia[0-9._-]+xx.*" }
+- { setname: nvidia,                   namepat: "nvidia[0-9._-]+" }
+- { setname: nvidia,                   namepat: "nvidia-drivers?[0-9._-]*" }
+- { setname: nvidia,                   name: nvidia-graphics-drivers-tegra, ignore: true, addflavor: tegra }
+- { setname: nvidia,                   namepat: "nvidia-graphics-drivers[0-9._-]*" }
+- { setname: nvidia,                   namepat: "nvidia-graphics-drivers[0-9._-]*-updates", addflavor: updates }
+- { setname: nvidia,                   namepat: "nvidia-graphics-drivers-legacy[x0-9._-]*" }
+- { setname: nvidia,                   namepat: "nvidia-graphics-drivers-experimental[x0-9._-]*", ignore: true }
+- { setname: nvidia,                   name: nvidia-graphics-drivers-updates, addflavor: updates }
+- { setname: nvidia,                   namepat: "nvidia-legacy.*" }
+#- { setname: nvidia,                   namepat: "nvidia-libgl.*beta.*", ignore: true, addflavor: libgl }
+#- { setname: nvidia,                   namepat: "nvidia-glx.*beta.*", ignore: true, addflavor: glx }
+- { setname: nvidia,                   namepat: "nvidia_glx_src[0-9._-]*", addflavor: glx }
+- { setname: nvidia,                   name: nvidia_glx_common, addflavor: glx }
+- { setname: nvidia,                   namepat: "xorg-x11-drv-nvidia[x0-9._-]*" }
+- { setname: nvidia,                   namepat: "(mhwd|khd)-nvidia[x0-9._-]*", addflavor: $1 }
+- { setname: nvidia,                   namepat: "nvidia-bfq[x0-9._-]*", addflavor: bfq }
+- { setname: nvidia,                   name: [driver-graphics-nvidia,nvidia-driver,nvidia-drivers] }
+- { setname: nvidia,                   name: [nvidia-graphics-modules,nvidia-kernel,nvidia-kmod], addflavor: kmod }
+- { setname: nvidia,                   name: [nvidia-beta,nvidia-beta-all,nvidia-current,nvidia-full-beta,nvidia-full-beta-all], ignore: true }
+- { setname: nvidia,                   name: nvidia-beta-dkms, ignore: true, addflavor: dkms }
+- { setname: nvidia,                   namepat: "xdrv:nvidia[0-9x._-]*" }
+- { setname: nvidia-settings,          namepat: "nvidia-[0-9._-]*-settings" }
+- { setname: nvidia-settings,          namepat: "nvidia-settings-.*" }
+- { setname: nvidia-settings,          namepat: "nvidia-settings-experimental.*", ignore: true }
+- { setname: nvidiabl,                 namepat: "(?:dkms|linux-rt.*|linux[0-9]+)-nvidiabl" }
+- { setname: nyx,                      name: "python:nyx" }

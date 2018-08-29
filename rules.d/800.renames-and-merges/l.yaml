@@ -1,0 +1,102 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- { setname: lambdahack,               name: "haskell:lambdahack" }
+- { setname: lame,                     name: libmp3lame }
+- { setname: language-pack-gnome,      namepat: "language-pack-gnome-.*", family: debuntu }
+- { setname: language-pack-kde,        namepat: "language-pack-kde-.*", family: debuntu }
+- { setname: lantern,                  name: lantern-headless }
+- { setname: lantern,                  name: lantern-headless }
+- { setname: lapack++,                 name: lapackpp }
+- { setname: lapack,                   name: [lapack-docs,lapack-reference], addflavor: docs }
+- { setname: lapack,                   name: lapack-atlas, addflavor: atlas }
+- { setname: lapack,                   name: lapack-manpages, addflavor: man }
+- { setname: lapack,                   name: lapack-tmg, addflavor: tmg } # component of
+- { setname: lapack,                   name: liblapack }
+- { setname: lapacke,                  name: lapacke-tmg, addflavor: tmg } # component of
+- { setname: lazpaint,                 name: [lazpaint-gtk2,lazpaint-qt4], addflavor: true }
+- { setname: lcms,                     name: [lcms,lcms1,lcms2,little-cms,little-cms2,lcms-python,liblcms,liblcms2,littlecms] }
+- { setname: ldb,                      name: [libldb,ldb12,ldb13] }
+- { setname: ldns,                     name: "perl:dns-ldns", wwwpart: nlnetlabs, addflavor: perl } # part of
+- { setname: ldns,                     name: "python:ldns", addflavor: python }
+- { setname: ldns,                     name: [ldns-tools,ldns-utils] }
+- { setname: leatherman,               name: libleatherman }
+- { setname: legendsbrowser,           name: legends-browser }
+- { setname: lensfun,                  name: liblensfun }
+- { setname: leptonica,                name: libleptonica }
+- { setname: leveldb,                  name: libleveldb }
+- { setname: leveldb,                  name: leveldb-mcpe, addflavor: mcpe }
+- { setname: libconfuse,               name: confuse }
+- { setname: liberal-crime-squad,      name: lcs }
+- { setname: libleptonica,             name: liblibleptonica }
+- { setname: libreoffice,              name: [libreoffice-bin,libreoffice-bin-debug,libreoffice-gtk3], addflavor: true }
+- { setname: libreoffice,              name: [libreoffice-dev,libreoffice-fresh,libreoffice-oldstable,libreoffice-still] }
+- { setname: libreoffice,              namepat: "([^-]+)-libreoffice", family: freebsd, addflavor: $1 }
+- { setname: libreoffice,              namepat: "libreoffice-((?:i18n|l10n).*)", addflavor: $1 }
+- { setname: libreoffice,              namepat: "libreoffice-(.*)", family: kaos, addflavor: $1 }
+- { setname: libreoffice,              namepat: "libreoffice-fresh-(.*)", family: arch, addflavor: $1 }
+- { setname: libreoffice,              namepat: "libreoffice-still-(.*)", family: arch, addflavor: $1 }
+- { setname: libreoffice-extension-barcode, name: barcode, family: gentoo, category: app-officeext }
+- { setname: libressl,                 name: libressl-devel, weak_devel: true }
+- { setname: libressl,                 name: libressl-netcat, addflavor: netcat }
+- { setname: lightdm,                  name: lightdm-devel, weak_devel: true }
+- { setname: lightdm,                  name: lightdm-ubuntu, addflavor: ubuntu }
+- { setname: lightdm,                  namepat: "(liblightdm(?:-qt4|-qt5)*)-devel", addflavor: $1, weak_devel: true }
+- { setname: lightdm,                  namepat: "liblightdm(?:-qt4|-qt5|-ubuntu)*", addflavor: true }
+- { setname: lightdm,                  name: [lightdm-guest,liblightdm-qt4-guest,liblightdm-qt5-guest] }
+- { setname: lightdm-gtk-greeter,      name: lightdm-gtk }
+- { setname: lightdm-gtk-greeter,      name: lightdm-gtk-greeter-devel, weak_devel: true }
+- { setname: lightsoff,                name: gnome-games-lightsoff }
+- { setname: lightyears,               name: 20kly }
+- { setname: lilypond,                 name: lilypond-devel-docs, addflavor: docs, weak_devel: true }
+- { setname: lilypond,                 name: [lilypond-doc,lilypond-docs], addflavor: docs }
+- { setname: lilypond,                 name: lilypond-devel, weak_devel: true }
+- { setname: links,                    name: [links1,links2,links+,links-g-directfb,links-gui] }
+- { setname: linux-firmware,           name: kernel-firmware }
+- { setname: linux-predator,           name: [linux-predator-docs,linux-predator-headers], addflavor: true }
+- { setname: lipsofsuna,               name: lips-of-suna }
+- { setname: liquidwar,                name: liquidwar5 }
+- { setname: liquidwar6,               name: liquid-war-6 }
+- { setname: live555,                  name: [liblive,liblivemedia,live,live-media,livemedia] }
+- { setname: live555,                  name: livemedia-utils, addflavor: utils }
+- { setname: lldb,                     name: lldb-assert, addflavor: assert }
+- { setname: lldb,                     name: lldb-polly, addflavor: polly }
+- { setname: lldb,                     namepat: "lldb[0-9._-]*-split", addflavor: split }
+- { setname: lldb,                     namepat: "lldb[0-9._-]+" }
+- { setname: llvm,                     namepat: "llvm[0-9.-]+" }
+- { setname: lm-sensors,               name: lm_sensors-max_of_fctemps, addflavor: true }
+- { setname: lmdb,                     name: liblmdb }
+- { setname: lmdb++,                   name: lmdbxx }
+- { setname: logcat-color,             name: "python:logcat-color" }
+- { setname: logmein-hamachi,          name: logmein-hamachi-beta, devel: true }
+- { setname: lostpixels,               name: blinkensisters-with-addons }
+- { setname: loudmouth,                name: loudmouth-ossl, addflavor: openssl }
+- { setname: love,                     namepat: "love(?:-legacy)?[0-9._-]+" }
+- { setname: lprof,                    name: lprof-devel, weak_devel: true }
+- { setname: lsof-freebsd,             name: lsof, family: freebsd } # patched version with own versioning
+- { setname: lua,                      namepat: "(?:lib)?lua[0-9._-]*" }
+- { setname: luajit,                   name: [luajit-2.1,luajit2] }
+- { setname: lugaru,                   name: openlugaru }
+- { setname: lugaru-data,              name: openlugaru-data }
+- { setname: luxrender,                name: luxrender14 }
+- { setname: lxappearance,             name: lxappearance-gtk2, addflavor: gtk2 }
+- { setname: lxappearance,             name: lxappearance-gtk3, addflavor: gtk3 }
+- { setname: lxappearance-obconf,      name: lxappearance-obconf-gtk3, addflavor: gtk3 }
+- { setname: lxc,                      name: lxc-selinux }
+- { setname: lxd,                      name: lxc, family: homebrew } # misname
+- { setname: lxd,                      name: lxd-lts }
+- { setname: lxdm,                     name: lxdm-gtk3, addflavor: gtk3 }
+- { setname: lxhotkey,                 name: lxhotkey-gtk3, addflavor: gtk3 }
+- { setname: lxinput,                  name: lxinput-gtk3, addflavor: gtk3 }
+- { setname: lxlauncher,               name: lxlauncher-gtk3, addflavor: gtk3 }
+- { setname: lxmusic,                  name: lxmusic-gtk3, addflavor: gtk3 }
+- { setname: lxpanel,                  name: lxpanel-gtk3, addflavor: gtk3 }
+- { setname: lxrandr,                  name: lxrandr-gtk3, addflavor: gtk3 }
+- { setname: lxsession,                name: lxsession-gtk3, addflavor: gtk3 }
+- { setname: lxtask,                   name: lxtask-gtk3, addflavor: gtk3 }
+- { setname: lxterminal,               name: lxterminal-gtk2, addflavor: gtk2 }
+- { setname: lxterminal,               name: lxterminal-gtk3, addflavor: gtk3 }
+- { setname: lxqt-l10n,                name: [libfmqt-l10n,liblxqt-l10n,lximageqt-l10n,pcmanfmqt-l10n,qterminal-l10n,qtermwidget-l10n], addflavor: true }
+- { setname: lynx,                     name: [lynx-cur,lynx-current] }
+- { setname: lyx,                      name: lyx1 }
+- { setname: lz4,                      name: liblz4 }
+- { setname: lzo,                      name: [lzo2,liblzo,liblzo2] }

@@ -1,0 +1,117 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- { setname: t,                        name: "ruby:t" }
+- { setname: ta-lib,                   name: libta-lib }
+- { setname: tabixpp,                  name: libtabixpp }
+- { setname: tali,                     name: gnome-games-tali }
+- { setname: talkfilters,              name: talk-filters }
+- { setname: talloc,                   name: libtalloc }
+- { setname: talloc,                   name: talloc-man, addflavor: man }
+- { setname: talloc,                   name: talloc-static, addflavor: static }
+- { setname: tar,                      name: [gnutar,gnu-tar,gtar] }
+- { setname: tar,                      name: [gtar-base,gtar-info], addflavor: true }
+- { setname: tautulli,                 name: tautulli-beta, ignore: true }
+- { setname: tbb,                      name: [intel-tbb,libtbb] }
+- { setname: tcl,                      namepat: "tcl8[0-9._-]+" }
+- { setname: tcl,                      name: tcltk } # hpux has tcl and tk merged; actually it should be merged to both, but we can't
+- { setname: tclhttpd,                 name: tcl-httpd }
+- { setname: tdb,                      name: libtdb }
+- { setname: tds_fdw,                  namepat: "(postgresql[0-9._-]*)-tds_fdw", addflavor: $1 }
+- { setname: teamviewer,               namepat: "teamviewer[0-9._-]+" }
+- { setname: teamviewer,               name: teamviewer-beta }
+- { setname: teamviewer-host,          name: teamviewer.host }
+- { setname: teamviewer-quicksupport,  name: teamviewer-quicksupport-beta }
+- { setname: tectonic,                 name: "rust:tectonic" }
+- { setname: teg,                      name: tenes-empanadas-graciela }
+- { setname: telegram-desktop,         name: [telegram-desktop-bin,telegram-desktop-systemqt,telegram-desktop-systemqt-emojione,telegram-desktop-systemqt-notoemoji] }
+- { setname: telegram-desktop,         name: [telegram-desktop-bin-dev,telegram-desktop-dev], ignore: true }
+- { setname: telegram-desktop,         name: linux-telegram-desktop, family: freebsd }
+- { setname: telegram-desktop,         name: telegram-desktop-beta }
+- { setname: telepathy-farstream,      name: [libtelepathy-farstream,telepathy-farstream-0.4] }
+- { setname: template-glib,            name: libtemplate-glib }
+- { setname: tepl,                     name: tepl3 }
+- { setname: terminal_markdown_viewer, name: mdv }
+- { setname: termtosvg,                name: "python:termtosvg" }
+- { setname: tesseract-ocr-data,       namepat: "tesseract(?:-ocr|-data)*-[a-z]{3}(?:-.*)?" }
+- { setname: testdisk,                 name: testdisk-wip, ignore: true }
+- { setname: testssl.sh,               name: testssl }
+- { setname: tetrinetx,                name: [tetrinet-x,tetrinet-server] }
+- { setname: tevent,                   name: libtevent }
+- { setname: tevent,                   name: tevent-man, addflavor: man }
+- { setname: tex-$1,                   namepat: "tex-(.*)-doc", addflavor: doc }
+- { setname: texlive-documentation,    namepat: "texlive-documentation-.*", family: gentoo }
+- { setname: texmaker,                 name: texmaker-qt4, addflavor: true }
+- { setname: texstudio,                name: [texstudio-dark,texstudio-lcd,texstudio-phonon,texstudio-qt4,texstudio-qt5], addflavor: true }
+- { setname: the-silver-searcher,      name: [silver-searcher,silversearcher-ag,thesilversearcher] }
+- { setname: thermald,                 name: thermal-daemon }
+- { setname: thunarx-python,           name: thunarx-python-0.3 }
+- { setname: thunder-and-lightning,    name: "thunder&lightning" }
+- { setname: thunderbird,              name: [mozilla-thunderbird,mozillathunderbird] }
+- { setname: thunderbird,              name: [thunderbird-45-gtk2,thunderbird-gtk2], addflavor: gtk2 }
+- { setname: thunderbird,              name: mozilla-thunderbird-l10n, addflavor: l10n }
+- { setname: thunderbird,              name: thunderbird-bin, addflavor: bin }
+- { setname: thunderbird,              name: thunderbird-i18n, addflavor: i18n }
+- { setname: thunderbird,              name: thunderbird-l10n-xpi, addflavor: l10n }
+- { setname: thunderbird,              name: thunderbird-ru, addflavor: ru }
+- { setname: thunderbird,              namepat: "thunderbird-(i18n-.*)", family: [openbsd,arch,kaos], addflavor: $1 }
+- { setname: thunderbird,              namepat: "thunderbird-beta(.*)", addflavor: $1, ignore: true }
+- { setname: thunderbird,              namepat: "thunderbird-nightly(.*)", addflavor: $1, ignore: true }
+- { setname: thunderbird,              namepat: "thunderbird[0-9.-]*" }
+- { setname: thunderbird,              namepat: "thunderbird[0-9.-]*-l10n", addflavor: l10n }
+- { setname: tidy,                     name: tidy-devel, weak_devel: true }
+- { setname: tidy,                     name: [html-tidy,htmltidy,tidy-html,tidy-html5,tidy-lib,tidy4,tidyhtml,tidy] }
+- { setname: tiff,                     name: [libtiff,libtiff3,libtiff4,tiff3,compat-libtiff3] }
+- { setname: tiff,                     name: tiffgt, addflavor: true }
+- { setname: tigervnc,                 name: [tiger-vnc,tigervnc-viewer] }
+- { setname: tigervnc,                 name: tigervnc-devel, weak_devel: true }
+- { setname: tiled,                    name: [tiled-java,tiled-qt] }
+- { setname: time,                     name: [gnu-time,gtime] }
+- { setname: timescaledb,              name: [postgresql10-timescaledb,postgresql96-timescaledb], addflavor: true }
+- { setname: timew,                    name: timewarrior }
+- { setname: timidity++,               name: [timidity++-emacs,timidity++-gtk,timidity++-motif,timidity++-slang,timidity++-tcltk,timidity++-xaw,timidity++-xskin] }
+- { setname: timidity++,               name: timidity, verpat: "2\\..*" }
+- { setname: tint,                     name: tint-tetris }
+- { setname: tintin++,                 name: [tintin,tintinxx] }
+- { setname: tk,                       namepat: "tk8[0-9._-]+" } # don't mix with tk2, tk5, tk707 which are unrelated projects
+- { setname: tmux,                     name: tmux-fullwidth-backspace, addflavor: true }
+- { setname: tmux,                     namepat: "tmux[0-9._-]+" }
+- { setname: tmuxinator,               name: "ruby:tmuxinator" }
+- { setname: tmw,                      name: the-mana-world }
+- { setname: tntnet,                   name: libtntnet }
+- { setname: tokyocabinet,             name: tokyo-cabinet }
+- { setname: tokyodystopia,            name: tokyo-dystopia }
+- { setname: tolua++,                  name: [toluapp,"lua:toluapp"] }
+- { setname: tolua++,                  namepat: "tolua\\+\\+[0-9._-]+" }
+- { setname: tomahawk,                 name: tomahawk-player }
+- { setname: tomahawk,                 name: tomahawk-qt5, addflavor: qt5 }
+- { setname: tome,                     name: [t-engine4,tales-of-majeyal,tome4,tome4-data,tome-ah] }
+- { setname: tome,                     name: tome4-beta, ignore: true }
+- { setname: tomee,                    name: [tomee-jax-rs,tomee-plume,tomee-plus,tomee-webprofile] }
+- { setname: toot,                     name: "python:toot" }
+- { setname: topgrade,                 name: "rust:topgrade" }
+- { setname: tor,                      name: [tor-devel,tor-unstable], weak_devel: true }
+- { setname: tor,                      name: tor-expert, addflavor: true }
+- { setname: torrent-file-editor,      name: [torrent-file-editor-qt4,torrent-file-editor-qt5], addflavor: true }
+- { setname: totem-pl-parser,          name: libtotem-pl-parser }
+- { setname: totem-pl-parser,          name: totem-pl-parser-gtk2, addflavor: gtk2 }
+- { setname: touchegg,                 name: [touchegg-gui,touchegg-qt5], addflavor: true }
+- { setname: toxcore,                  name: [toxcore-legacy,toxcore-toktok] }
+- { setname: toxcore,                  name: [toxcore-static1,toxcore-static2], addflavor: static }
+- { setname: toxcore,                  name: [c-toxcore,libtoxcore,tox,tox-libtoxcore] } # there's some discrepancy between https://github.com/TokTok/c-toxcore and https://github.com/irungentoo/toxcore, but only the former has releases
+- { setname: tpm2-tools,               name: tpm2.0-tools, disposable: true } # past upstream naming fluctiations
+- { setname: tre,                      name: libtre } # XXX: reverse?
+- { setname: tremor,                   name: [libtremor, libvorbisidec] }
+- { setname: tremulous,                name: tremulous-data, addflavor: data }
+- { setname: triceratops-lv2,          name: lv2-triceratops }
+- { setname: trigger-rally,            name: trigger, family: gentoo }
+- { setname: tripwire,                 name: [tripwire-131,tripwire12] }
+- { setname: trn,                      name: trn4 }
+- { setname: trnascan-se,              name: trnascanse }
+- { setname: tsc,                      name: the-secret-chronicles-of-dr-m }
+- { setname: tsmuxer,                  name: linux-tsmuxer, family: freebsd }
+- { setname: tufao,                    name: tufao0, addflavor: true }
+- { setname: tufao,                    name: tufao0-qt5, addflavor: qt5 }
+- { setname: tuxpaint,                 name: tux-paint }
+- { setname: twinkle,                  name: twinkle-qt5, addflavor: true }
+- { setname: twolame,                  name: two-lame }
+- { setname: tyrian-data,              name: opentyrian_data }

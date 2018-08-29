@@ -1,0 +1,33 @@
+# vim: tabstop=29 expandtab softtabstop=29
+
+# there are two `ne`s, and they are both editors; prefix is for `cambridge`
+# another is `nice editor`, but I don't feel like renaming it as it's `ne` everywhere
+- { name: ne, wwwpart: wordprocessing/unix/ne, setname: ne-cam }
+
+- { name: netcat, verpat: "0\\..*", setname: gnu-netcat }
+- { name: netcat, verpat: "1\\.[0-9]{2}", setname: netcat-traditional }
+- { name: netcat, verpat: "1\\.[0-9]{3}", setname: netcat-openbsd }
+- { name: netcat, warning: "please classify me" }
+
+- { name: newsbeuter, wwwpart: newsboat, setname: newsboat } # XXX: problem; newsboat is a fork of newsbeuter, package should be renamed
+
+- { name: nightfall, wwwpart: kpcyrd, setname: nightfall-kpcyrd } # othewise astronomical app
+
+- { name: ninja, wwwpart: qoop, setname: ninja-irc }
+- { name: ninja, category: net-irc, setname: ninja-irc }
+- { name: ninja, wwwpart: forkbomb, setname: ninja-privesc }
+
+- { name: nml, wwwpart: ropas, setname: "$0-lang" }
+
+#
+- { name: nodejs, wwwpart: ax25, setname: node-ax25 }
+- { name: nodejs, category: [universe/hamradio,lang,Development/Tools,hamradio], setname: node-ax25 }
+
+- { name: nstat, family: freebsd, setname: nstat-netflix }
+
+- { name: nvi, verpat: "2\\..*",       setname: nvi2 }
+
+- { name: nut, wwwpart: nut.sourceforge, setname: nut-nutrition }
+- { name: nut, ruleset: hpux, setname: nut-nutrition }
+
+- { name: nvm, wwwpart: coreybutler, setname: nvm-windows }

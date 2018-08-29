@@ -1,0 +1,19 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- { setname: "rust:cargo-asm",         name: cargo-asm }
+- { setname: "rust:getopts",           name: rust-getopts } # XXX: replace with wildcard?
+- { setname: "rust:simple-http-server", name: simple-http-server }
+- { setname: "rust:xsv",               name: xsv-rs }
+
+- namepat: |
+    (rust:(?:
+    hyper|
+    mime|
+    native-tls|
+    quote|
+    rand|
+    synstructure|
+    syn|
+    unicase
+    ))[0-9._-]+
+  setname: "$1"

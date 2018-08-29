@@ -1,0 +1,35 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+#
+# List of splits which meed to be processed before merges, as it'd be
+# hard to split these afterwards
+#
+
+- { setname: dash,                     name: ash, family: sisyphus } # XXX: problem
+- { setname: espeak-ng,                name: espeak, verpat: "1\\.49\\..*", family: [kaos,termux] } # XXX: problem
+- { setname: libdmx,                   name: xorg-dmx, family: ravenports } # don't mix with xorg dmx server
+- { setname: mysql-connector-c,        name: libmysqlclient, family: haikuports } # not really libmysqlclient from mysql
+- { setname: "perl:html-formatter",    name: "perl:html-format", family: fedora } # XXX: problem
+- { setname: "python:pygpgme",         name: "python:gpgme", family: pclinuxos }
+- { setname: "python:pygpgme",         name: "python:gpgme", wwwpart: pygpgme }
+- { setname: wine-etersoft,            name: wine, family: sisyphus } # counterfeit
+- { setname: "python:pyxdg",           name: "python:xdg", verpat: "0\\..*" } # XXX: problem
+- { setname: s-nail,                   name: mailx, family: crux } # XXX: problem
+- { setname: gcompris-qt,              name: gcompris, verpat: "0\\..*" } # XXX: it may be that qt variant is successor of gtk one and they need to be merge+outdated rules; should investigate
+- { setname: gcompris,                 name: gcompris-qt, verpat: "1[0-9]\\..*" }
+- { setname: sdl2,                     name: sdl, verge: "2" }
+- { setname: sdl2_ttf,                 name: sdl_ttf, ruleset: [exherbo,kaos] }
+- { setname: sdl2_net,                 name: sdl_net, verge: "2" }
+- { setname: sdl2_mixer,               name: sdl_mixer, verge: "2" }
+- { setname: mandoc,                   name: man, wwwpart: mdocml }
+- { setname: google-authenticator-libpam, name: google-authenticator, wwwpart: google-authenticator-libpam }
+- { setname: "python:iso-8601",        name: "python:iso8601", ver: "0.2.4" } # rosa problem
+- { setname: scantailor-advanced,      name: scantailor, verge: "1" }
+- { setname: "python:python-ctags3",   name: "python:python-ctags", wwwpart: python-ctags3 }
+- { setname: "python:enum34",          name: "python:enum", wwwpart: enum34 }
+- { setname: puppet-agent,             name: puppet, ruleset: scoop }
+- { setname: lzma,                     name: lzlib, wwwpart: sevenzip }
+- { setname: "python:pypdf2",          name: "python:pypdf", wwwpart: pypdf2 }
+- { setname: "python:py-restclient",   name: "python:restclient", wwwpart: py-restclient }
+- { setname: xfwm4,                    name: xfwm4-themes, ruleset: slitaz } # seems it was a separate package up to ver 4.10
+- { setname: jigit,                    name: libjte, ruleset: slitaz } # seems it was a separate package up to ver 4.10

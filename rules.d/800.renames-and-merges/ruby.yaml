@@ -1,0 +1,122 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- { namepat: "(ruby:.*)-rails(?:5|50)", setname: "$1", family: freebsd }
+
+- namepat: |
+    (ruby:(?:
+    actioncable|
+    actionmailer|
+    actionpack|
+    actionpack-xml_parser|
+    actionview|
+    activejob|
+    activemodel|
+    activerecord|
+    activeresource|
+    activesupport|
+    acts-as-taggable-on|
+    addressable|
+    ansi|
+    arel|
+    blankslate|
+    builder|
+    chef-client|
+    clamp|
+    coffee-rails|
+    colorator|
+    commander|
+    concurrent-ruby|
+    cri|
+    deprecated|
+    doorkeeper|
+    erubis|
+    faraday|
+    faraday_middleware|
+    fast_gettext|
+    fast_xs|
+    flipper|
+    flipper-active[-_]record|
+    flipper-active[-_]support[-_]cache[-_]store|
+    fluentd|
+    fog-aws|
+    gherkin|
+    gitaly-proto|
+    glib2|
+    gobject-introspection|
+    google-api-client|
+    gstreamer|
+    hashie|
+    hiera|
+    highline|
+    hike|
+    html-pipeline|
+    http_parser.rb|
+    journey|
+    json|
+    json-schema|
+    json_pure|
+    launchy|
+    liquid|
+    listen|
+    mail|
+    map|
+    mime-types|
+    mini_magick|
+    mini_portile|
+    minitest|
+    moneta|
+    multipart-post|
+    mustache|
+    mustermann|
+    mysql|
+    net-http-persistent|
+    net-scp|
+    net-ssh|
+    net-ssh-multi|
+    ohai|
+    omniauth-facebook|
+    parseconfig|
+    parslet|
+    progressbar|
+    pry|
+    public[_-]suffix|
+    rack|
+    rack-cache|
+    rack-ssl|
+    rack-test|
+    rails|
+    rails-dom-testing|
+    railties|
+    rake-compiler|
+    recursive-open-struct|
+    rouge|
+    rpam2|
+    ruby-vnc|
+    rubyntlm|
+    sass|
+    sass-rails|
+    sexp_processor|
+    simple_oauth|
+    slack-notifier|
+    slop|
+    sprockets|
+    thread_safe|
+    tilt|
+    treetop|
+    trollop|
+    typhoeus|
+    tzinfo|
+    utilrb|
+    web-console
+    ))[0-9._-]+
+  setname: "$1"
+
+- { name: "ruby:http_parser_rb", setname: "ruby:http-parser.rb" }
+- { name: "ruby:pygments_rb", setname: "ruby:pygments.rb" }
+
+- { setname: "ruby:bundler",           name: bundler }
+- { setname: "ruby:bundler",           namepat: "ruby[0-9.]+-bundler" }
+- { setname: "ruby:gems",              name: ["ruby:rubygems",ruby-gems,rubygems] }
+- { setname: "ruby:install",           name: ruby-install }
+- { setname: "ruby:jekyll",            name: jekyll }
+- { setname: "ruby:jekyll-$1",         namepat: "jekyll-(.*)" }

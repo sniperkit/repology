@@ -1,0 +1,29 @@
+# vim: tabstop=29 expandtab softtabstop=29
+
+- { name: libelf,                      wwwpart: elfutils, setname: elfutils } # Arch: XXX: problem
+
+- { name: libidn,                      verpat: "2.*", setname: libidn2 } # Haikuports: XXX: problem, different libraries
+
+- { name: libmpc,                      wwwpart: multiprecision, setname: gnumpc }
+
+- { name: libtorrent,                  family: vcpkg, setname: arvidn-libtorrent  }
+
+- { name: libunicode,                  wwwpart: courier, setname: courier-unicode }
+
+- { name: libunwind,                   wwwpart: llvm, setname: llvm-libunwind }
+- { name: libunwind,                   verge: "4", setname: llvm-libunwind }
+
+- { name: libuuid, verpat: "2\\.[0-9]{4}(\\.[0-9]+)?", setname: util-linux, addflavor: libuuid } # part of
+
+# gentoo vs. fedora livecd-tools
+- { name: livecd-tools,                wwwpart: gentoo, setname: livecd-tools-gentoo }
+- { name: livecd-tools,                category: app-misc, family: gentoo, setname: livecd-tools-gentoo }
+- { name: livecd-tools,                setname: "$0-fedora" }
+
+- { name: loderunner, wwwpart: daggert, setname: loderunner-daggert }
+- { name: loderunner, wwwpart: loderunnerwebgame.com, setname: loderunner-html5 }
+
+- { name: "lua:yaml", verge: "5", setname: "lua:lyaml" }
+
+# there are two branches, see http://invisible-island.net/luit/
+- { name: luit, wwwpart: invisible-island, setname: luit-xterm }

@@ -1,0 +1,20 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- { setname: 0ad,                      name: [zeroad, 0-ad] }
+- { setname: 2048-cli,                 name: "2048", family: freebsd } # differentiate from 2048-qt
+- { setname: 2048.c,                   name: c2048 }
+- { setname: 2bwm,                     name: twobwm }
+- { setname: 2ping,                    name: twoping }
+- { setname: 3270font,                 name: 3270-fonts }
+- { setname: 3dc,                      name: 3dchess, family: debuntu }
+- { setname: 3dldf,                    name: 3dldf-doc, addflavor: doc }
+- { setname: 3dm2,                     name: 3dm }
+- { setname: 3dpong,                   name: 3d-pong }
+- { setname: 3dslicer,                 name: 3dslicer-nightly, ignore: true } # XXX: soft devel
+- { setname: 3proxy,                   name: 3proxy-win32, addflavor: win32 }
+- { setname: 4do-libretro,             name: libretro-4do }
+- { setname: 4dtris,                   name: 4d-tris }
+- { setname: 4store,                   name: fourstore }
+- { setname: 7kaa,                     name: [seven-kingdoms, seven-kingdoms-ancient-adversaries] }
+- { setname: 8kingdoms,                name: 8-kingdoms }
+- { setname: 90secondportraits,        name: 90-second-portraits }
