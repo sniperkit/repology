@@ -1,0 +1,66 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- { name: dapl,                        verpat: ".*[0-9a-f]{8}",                            snapshot: true }
+- { name: darcs,                       verpat: ".*20[0-9]{6}.*",                           ignore: true }
+- { name: darcs,                       ver: "2.13.0",                family: fedora,       incorrect: true } # fake
+- { name: darcs,                                                     family: fedora,       untrusted: true }
+- { name: dahdi-linux,                 verlonger: 4,                                       incorrect: true }
+- { name: dbus,                        verpat: "[0-9]+\\.[0-9]*[13579]\\..*",              devel: true }
+- { name: dbus-cpp,                    verpat: "(.*)\\+.*",                                setver: "$1" } # aosc snapshot
+- { name: dconf-editor,                verpat: "[0-9]+\\.[0-9]*[13579]\\..*",              devel: true }
+- { name: ddate,                       verpat: ".*20[0-9]{6}.*",                           ignore: true }
+- { name: dee-qt,                      verpat: "(.*)\\+.*",                                setver: "$1" } # aosc snapshot
+- { name: deepin-sound-theme,          ver: "17.07.31",              ruleset: pardus,      ignore: true }
+- { name: deepin-utils,                                                                    noscheme: true }
+- { name: dehydrated,                  verlonger: 3,                                       incorrect: true } # freebsd
+- { name: deja-dup,                    verpat: "[0-9]*[13579]\\..*",                       devel: true }
+- { name: denyhosts,                   ver: ["3.0","3.1"],                                 devel: true }
+- { name: devhelp,                     verpat: "[0-9]+\\.[0-9]*[13579]\\..*",              devel: true }
+- { name: dex2jar,                     ver: "2.1",                   ruleset: blackarch,   incorrect: true } # actually 2.1-nightly-NN
+- { name: dff,                         verpat: "(.*)\\.20[0-9]{6}",                        setver: "$1" } # aosc snapshot
+- { name: dhewm3,                      ver: "1.4.2",                 family: [ fedora ],   ignore: true } # no such version (rpmfusion)
+- { name: dia,                         ver: "0.97.4",                family: [ sisyphus ], ignore: true } # no such release
+- { name: dia,                         verpat: ".*[0-9]{8}.*",                             ignore: true } # snapshot
+- { name: diction,                     ver: "1.14",                  family: hpux,         incorrect: true }
+- { name: diction,                                                   family: hpux,         untrusted: true }
+- { name: diction,                     verge: "1.13",                                      successor: true } # http://www.moria.de/~michael/diction/ vs. https://ftp.gnu.org/gnu/diction/
+- { name: dietlibc,                    verpat: ".*(pre|cvs|20[0-9]{6}).*",                 ignore: true }
+- { name: diff-pdf,                    verpat: "20[0-9-]{6}.*",                            ignore: true }
+- { name: diff-pdf,                    verlonger: 2,                 ruleset: freebsd,     incorrect: true }
+- { name: diffpdf,                     verge: "2.1.3.1",                                   successor: true }
+- { name: dirb,                        verpat: "[0-9]{3}",                                 incorrect: true, disposable: true } # slackbuilds; 2.22, not 222
+- { name: directfb,                    ver: "1.8.0",                 ruleset: slitaz,      incorrect: true }
+- { name: discord,                                                   family: chocolatey,   ignore: true } # windows version has different versioning
+- { name: distcc,                      ver: "3.2",                   family: pkgsrc,       incorrect: true }
+- { name: distcc,                      ver: "3.2.0rc1",                                    incorrect: true } # it's 3.2rc1
+- { name: distcc,                                                    family: pkgsrc,       untrusted: true }
+- { name: distorm,                     verpat: "20[0-9]{6}.*",                             ignore: true } # freebsd garbage
+- { name: djvulibre,                   ver: "3.5.27.1",                                    ignore: true }
+- { name: dkms,                        ver: "2.022.0",                                     ignore: true } # gobolinux fake
+- { name: dnrd,                        ver: "2.20.4",                ruleset: aix,         incorrect: true }
+- { name: dnrd,                                                      ruleset: aix,         untrusted: true }
+- { name: dnscap,                      verpat: "[0-9]{3,}",                                ignore: true }
+- { name: dnstop,                                                                          noscheme: true }
+- { name: dmake,                       verpat: ".*20[0-9]{6}",                             ignore: true } # freebsd snapshot
+- { name: doas,                                                                            p_is_patch: true }
+- { name: doas,                        verpat: "6.0p[0-9]+",                               successor: true }
+- { name: docker-tray,                 verge: "1.5.1",                                     successor: true }
+- { name: dosbox,                      verpat: "0\\.74\\.[4r].*",                          ignore: true }
+- { name: dosemu,                      verpat: "2013.*",                                   ignore: true }
+- { name: dosemu,                      verpat: "1\\.4\\.1.*",        family: [sisyphus,gentoo], ignore: true }
+- { name: dolphin,                     verpat: "[0-9]+\\.[0-9]*[13579]\\..*",              devel: true }
+- { name: dolphin-emu,                 verpat: ".*[0-9]{4,}.*",                            ignore: true }
+- { name: doublecmd,                                                                       devel: false } # they state all version to be beta: https://sourceforge.net/p/doublecmd/news/, this is pointless
+- { name: doublecmd,                   verpat: ".*svn.*",                                  ignore: true }
+- { name: dovecot-pigeonhole,          verpat: "2\\.2[^0-9].*",                            incorrect: true } # WTF is that?
+- { name: dsd,                         ver: "1.7.0",                 family: [sisyphus],   incorrect: true } # no such version
+- { name: dsd,                                                       family: [sisyphus],   untrusted: true }
+- { name: dsniff,                      ver: "2.4",                   family: [sisyphus],   incorrect: true } # it's 2.4beta1
+- { name: dsniff,                                                    family: [sisyphus],   untrusted: true }
+- { name: dtc,                         ver: "20130410",                                    outdated: true }
+- { name: dtc,                         verpat: "20[0-9]{6}",                               ignore: true }
+- { name: dukto,                       verpat: "[0-9]{3}",                                 incorrect: true } # slitaz
+- { name: dukto,                       verpat: "r([0-9]+)",                                setver: $1 }
+- { name: dwb,                         verpat: "20[0-9]{6}.*",                             ignore: true }
+- { name: dwb,                         ver: "2015.10.09",                                  incorrect: true } # https://bitbucket.org/portix/dwb/downloads/
+- { name: dzen,                        verpat: "[0-9]{10}",                                ignore: true }

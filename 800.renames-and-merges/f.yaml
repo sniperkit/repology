@@ -1,0 +1,145 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- { setname: faad2,                    name: faad }
+- { setname: fabla,                    name: [openav-fabla,lv2-fabla] }
+- { setname: facter,                   name: facter2 }
+- { setname: factor,                   name: factor-lang }
+- { setname: fail2ban,                 name: "python:fail2ban" }
+- { setname: fail2ban,                 name: fail2ban6 }
+- { setname: falcons-eye,              name: falconseye }
+- { setname: farstream,                namepat: "farstream[0-9.-]+" }
+- { setname: fasta,                    name: fasta3 }
+- { setname: fastd,                    name: fastd-devel, weak_devel: true }
+- { setname: fcgi,                     name: [fcgi-devkit,libfcgi] }
+- { setname: fcgi-cgi,                 name: fcgi-cgi-static, addflavor: static }
+- { setname: fcitx,                    name: [fcitx-gtk2,fcitx-gtk3], addflavor: true }
+- { setname: fdk-aac,                  name: libfdk-aac }
+- { setname: fdkaac,                   name: fdk-aac-encoder }
+- { setname: fetch-crl,                name: fetch-crl3 }
+- { setname: fetchmail,                name: fetchmailconf, addflavor: fetchmailconf }
+- { setname: ffcall,                   name: libffcall }
+- { setname: ffmpeg,                   namepat: "(?:compat-)?ffmpeg(?:-compat)?[0-9_.-]*" }
+- { setname: ffmpeg,                   name: [ffmpeg-ex,ffmpeg-full3.4,ffmpeg-libfdk_aac,ffmpeg-mmal,ffmpeg-qsv], addflavor: true }
+- { setname: ffmpeg,                   name: [ffplay,ffplay4], addflavor: ffplay }
+- { setname: ffmpeg,                   name: ffserver, addflavor: true }
+- { setname: ffmpeg,                   name: libavutil-52, addflavor: libavutil }
+- { setname: fftw,                     name: [fftwf,fftw-avx,fftw-static] }
+- { setname: fftw,                     namepat: "(?:lib)?fftw[0-9._-]*(-double|-float|-long-double|-quad|-single|-long|-mpi|-mpich|-openmpi|-common|-gnu-.*)?", addflavor: $1 }
+- { setname: fife,                     name: [fifengine,"python:fife"] }
+- { setname: file-roller,              name: [file-roller-ja,file-roller-tmp,file-roller2-nn,file-roller-debug], addflavor: true }
+- { setname: file-roller,              name: legacy-file-roller }
+- { setname: filebot,                  name: filebot47 }
+- { setname: fillets-ng,               name: fish-fillets-next-generation }
+- { setname: fillets-ng,               name: fish-fillets }
+- { setname: fillets-ng,               name: fish-fillets-ng }
+- { setname: firebase-cli,             name: firebase-tools }
+- { setname: firebird,                 namepat: "firebird[0-9.-]*(?:-client|-server)?" }
+- { setname: firefox,                  namepat: "firefox-developer(.*)", addflavor: $1, devel: true }
+- { setname: firefox,                  namepat: "firefox-developer-edition(.*)", addflavor: $1, devel: true }
+- { setname: firefox,                  namepat: "firefox-esr[0-9.-]*" }
+- { setname: firefox,                  namepat: "firefox-esr[0-9.-]*(-gtk2|-privacy|-unwrapped)", addflavor: $1 }
+- { setname: firefox,                  namepat: "firefox[0-9.-]*" }
+- { setname: firefox-beta-i18n,        namepat: "firefox-beta-i18n-.*" }
+- { setname: firefox-esr-i18n,         namepat: "firefox-esr-(i18n-.*)", addflavor: $1 }
+- { setname: firefox-esr-l10n,         namepat: "firefox-esr[0-9.-]*-l10n" }
+- { setname: firefox-i18n,             namepat: "firefox-(i18n|l10n)-.*" }
+- { setname: firefox-kde-i18n,         namepat: "firefox-(kde-i18n-.*)", addflavor: $1 }
+- { setname: five-or-more,             name: gnome-games-five-or-more }
+- { setname: flac,                     name: flac-doc, addflavor: doc }
+- { setname: flac,                     name: [flac-libs,libflac] }
+- { setname: flare,                    name: [flare-engine,flare-game], addflavor: true } # these are actually distinct packages, but too many repos merge them together
+- { setname: flatbuffers,              name: flatbuffers-static, addflavor: static }
+- { setname: fleet,                    name: fleetctl }
+- { setname: flight-of-the-amazon-queen, name: fotaq }
+- { setname: flight-of-the-amazon-queen, name: scummvm-fotaq }
+- { setname: flim,                     name: [flim-xemacs,flim-emacs25,emacs-flim] }
+- { setname: flipit,                   name: flipit-x10 }
+- { setname: flite,                    name: [flite1,flite-fpic] }
+- { setname: florence,                 name: florence05 }
+- { setname: florist,                  name: florist-gpl }
+- { setname: floating-ips,             name: flips }
+- { setname: flow-tools,               name: flow-tools-ng }
+- { setname: flrig,                    name: flrig-docs, addflavor: true }
+- { setname: fltk,                     name: [fltk-docs,fltk-editor,fltk-games,fltk-blocks,fltk-checkers,fltk-colbrowser,fltk-sudoku], addflavor: true }
+- { setname: fltk,                     namepat: "(?:lib)?fltk[0-9._-]*" }
+- { setname: fltk,                     name: fltk-devel, weak_devel: true }
+- { setname: fluidsynth,               name: fluid-synth }
+- { setname: flume,                    name: apache-flume-ng }
+- { setname: flutter,                  name: flutter-dev, devel: true }
+- { setname: fluxbox,                  name: [fluxbox-wm,fluxbox-noslit] }
+- { setname: flwm,                     name: flwm-tc }
+- { setname: fmod,                     namepat: "(?:lib)?fmod(?:ex|api)?[0-9._-]*" }
+- { setname: fmt,                      name: [fmtlib,libfmt,cppformat] } # cppformat is the former name, see http://fmtlib.net
+- { setname: fofix,                    name: fofix-dfsg }
+- { setname: foldingathome,            name: foldingathome-noroot }
+- { setname: folly,                    name: fb-folly }
+- { setname: fomp,                     name: [fomp-lv2,lv2-fomp-plugins] }
+- { setname: fon-flash,                name: fon-flash-cli }
+- { setname: font-util,                name: fontutil }
+- { setname: fontconfig,               name: fontconfig-reference, addflavor: true }
+- { setname: foo2js,                   name: foo2zjs-nightly, weak_devel: true }
+- { setname: foobillard++,             name: foobillardplus }
+- { setname: fop,                      name: [apache-fop,fop2,xmlgraphics-fop] }
+- { setname: fossology,                name: fossology-nomos-standalone } # part of fossology
+- { setname: foundationdb,             name: [foundationdb-clients,foundationdb-server], addflavor: true }
+- { setname: four-in-a-row,            name: gnome-games-four-in-a-row }
+- { setname: fox,                      name: fox-toolkit }
+- { setname: fox,                      name: [fox-devel,fox-toolkit-devel], weak_devel: true }
+- { setname: fox,                      namepat: "(?:lib)?fox[0-9._-]*" }
+- { setname: fox,                      name: [adie,calculator], wwwpart: fox-toolkit, addflavor: true } # bundled apps
+- { setname: foxyproxy,                name: xpi-foxyproxy, family: freebsd }
+- { setname: fpc,                      name: [fpc-source,fpc-src] } # part of fossology
+- { setname: fpc-modules,              namepat: "fpc-.*", family: freebsd }
+- { setname: fping,                    name: [fping3,fping6] }
+- { setname: fqterm,                   name: fqterm-qt5, addflavor: true }
+- { setname: fracplanet,               name: fracplanet-qt5, addflavor: true, disposable: true }
+- { setname: free42,                   name: free42-nologo, family: debuntu }
+- { setname: freebasic,                name: fbc, addflavor: true }
+- { setname: freeciv,                  name: [freeciv-gtk,freeciv-sdl] }
+- { setname: freeciv,                  namepat: "freeciv-(?:client|server|share)", family: [pkgsrc,openbsd] }
+- { setname: freedink,                 name: freedink-engine }
+- { setname: freedink-dfarc,           name: dfarc }
+- { setname: freedoom,                 name: [doom-freedoom,freedoom-freedm] }
+- { setname: freedroid,                name: freedroidclassic }
+- { setname: freedroidrpg,             name: freedroid-rpg }
+- { setname: freefoom,                 name: [freedoom1,freedoom2] }
+- { setname: freeglut,                 name: libfreeglut }
+- { setname: freemarker,               name: [freemarker2.3.23,libfreemarker-java] }
+- { setname: freemedforms,             name: freemedforms-project }
+- { setname: freepats,                 name: [timidity-freepats,timidity-patch-freepats] }
+- { setname: freeplane,                name: freeplane-srcbuild }
+- { setname: freeradius,               name: [freeradius-freetds,freeradius-iodbc,freeradius-krb5,freeradius-ldap,freeradius-memcached,freeradius-mysql,freeradius-perl,freeradius-pgsql,freeradius-python,freeradius-rest,freeradius-sqlite3,freeradius-unixodbc,freeradius-wpe,freeradius-yubikey], addflavor: true }
+- { setname: freeradius,               name: [freeradius-server,freeradius3] }
+- { setname: freerdp,                  namepat: "freerdp[0-9.-]+" }
+- { setname: freetds,                  name: freetds-devel, weak_devel: true }
+- { setname: freetds,                  name: [freetds-krb5,freetds-patched-enum], addflavor: true }
+- { setname: freetype,                 name: [libfreetype,freetype1,freetype2] }
+- { setname: freetype-infinality,      name: [freetype2-infinality,libfreetype-infinality] }
+- { setname: fretsonfire,              name: frets-on-fire }
+- { setname: friently-find,            name: ffind }
+- { setname: frozen-bubble,            name: frozen-bubble-server, addflavor: server }
+- { setname: frozen-bubble,            name: frozenbubble2 }
+- { setname: frr,                      name: [frr3,frr4,frr5] }
+- { setname: fs-uae,                   name: fs-uae-devel, weak_devel: true }
+- { setname: fs-uae-arcade,            name: fs-uae-arcade-devel, weak_devel: true }
+- { setname: fs-uae-launcher,          name: fs-uae-launcher-devel, weak_devel: true }
+- { setname: fselect,                  name: "rust:fselect" }
+- { setname: fsv,                      name: fsv2 }
+- { setname: fteproxy,                 name: "python:fteproxy" }
+- { setname: fuzzylite,                name: fuzzylite5 }
+- { setname: fwbuilder,                name: [fwbuilder-qt4,fwbuilder-qt5], addflavor: true }
+
+- setname: ffmpeg
+  name:
+    - ffmpeg-compat
+    - ffmpeg-decklink
+    - ffmpeg-full
+    - ffmpeg-full-nvenc
+    - ffmpeg-headless
+    - ffmpeg-headless2.8
+    - ffmpeg-nvenc
+    - ffmpeg-nvenc-manjaro
+    - ffplay1
+    - ffplay2
+    - ffplay3
+  addflavor: true

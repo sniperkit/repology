@@ -1,0 +1,36 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- setname: "fonts:radisnoir"
+  name:
+    - fonts-radisnoir
+    - ttf-radisnoir
+
+- setname: "fonts:rajdhani"
+  name:
+    - fonts-rajdhani
+    - ttf-rajdhani
+
+- setname: "fonts:raleway"
+  name:
+    - fonts-otf-impallari-raleway
+    - impallari-raleway-fonts
+    - otf-impallari-raleway-family
+    - otf-raleway
+    - raleway
+    - raleway-fonts
+    - raleway-ttf
+    - ttf-impallari-raleway-family
+    - ttf-raleway
+    - ttf-raleway-ibx
+
+- setname: "fonts:raleway-dots"
+  name:
+    - ttf-impallari-raleway-dots
+
+- setname: "fonts:ricty"
+  name:
+    - font-ricty
+    - ja-font-ricty
+    - ricty
+    - ricty-ttf
+    - ttf-ricty

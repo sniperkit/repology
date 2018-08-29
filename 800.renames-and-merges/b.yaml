@@ -1,0 +1,302 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- { setname: babl,                     name: libbabl }
+- { setname: backblaze-b2,             name: b2-tools }
+- { setname: backintime,               name: [backintime-cli,backintime-common,backintime-qt4], addflavor: true }
+- { setname: backuppc,                 name: backuppc-devel, weak_devel: true }
+- { setname: backuppc,                 name: backuppc4 }
+- { setname: badtouch,                 name: "rust:badtouch" }
+- { setname: bahn-regio-entfernungsrechner, name: bahn-regio-entfernungsrechner-latest }
+- { setname: bakery,                   name: bakery2.6 }
+- { setname: balazar3,                 name: balazar-iii }
+- { setname: balsa,                    name: balsa-gtk2 }
+- { setname: baobab,                   name: gnome-disk-usage }
+- { setname: barbie-seahorse-adventures, name: seahorse-adventures }
+- { setname: barcode,                  name: gnu-barcode }
+- { setname: base,                     name: acidbase }
+- { setname: bash,                     name: [bash-interactive,bash-minimal,bash-static], addflavor: true }
+- { setname: bash,                     name: bash-devel, weak_devel: true }
+- { setname: bash,                     name: bash-devel-static, weak_devel: true, addflavor: bash-static }
+- { setname: bash,                     namepat: "bash[0-9]+" }
+- { setname: batman-adv,               name: [batman-adv-dkms,batman-adv-legacy-dkms], addflavor: dkms }
+- { setname: batman-adv,               name: batman-adv-optimized, addflavor: true }
+- { setname: battery-monitor,          name: battery-monitor-devel, weak_devel: true }
+- { setname: bats,                     name: [bats-core,bash-bats] }
+- { setname: bazel,                    name: bazel-clang38, addflavor: true }
+- { setname: bazel-buildtools,         name: buildifier, addflavor: true }
+- { setname: baudline,                 name: linux-baudline, family: freebsd }
+- { setname: bbpager,                  name: [bbpager03,bbpager04] }
+- { setname: bbswitch,                 namepat: "(linux[0-9]+)-bbswitch", addflavor: $1 }
+- { setname: bbswitch,                 name: dkms-bbswitch }
+- { setname: bbswitch,                 name: [bbswitch-ck,bbswitch-ck-fbcondecor,bbswitch-dkms,bbswitch-dkms-lts,bbswitch-lts,bbswitch-mainline,bbswitch-next,bbswitch-pf,kernel-modules-bbswitch-std-def,kernel-modules-bbswitch-un-def], addflavor: true }
+- { setname: bcc,                      name: "python:bcc", addflavor: python } # split in 850
+- { setname: bcc,                      name: bcc-tools, addflavor: tools }
+- { setname: bcc,                      name: bpfcc }
+- { setname: bcel,                     name: bcel5_3 }
+- { setname: bcfg2,                    name: "python:bcfg2" }
+- { setname: bcompare,                 name: [bcompare-cinnamon,bcompare-kde4,bcompare-kde5,bcompare-mate,bcompare-nautilus,bcompare-thunar], addflavor: true }
+- { setname: bcompare,                 name: bcompare3 }
+- { setname: bctoolbox,                name: libbctoolbox }
+- { setname: bdsup2sub++,              name: bdsup2subpp }
+- { setname: beancount,                name: "python:beancount" }
+- { setname: beast,                    name: beastbse }
+- { setname: beef-browser-exploitation, name: beef-xss }
+- { setname: belle-sip,                name: libbelle-sip }
+- { setname: beneath-a-steel-sky,      name: bass, family: [freebsd,gentoo,openbsd,arch,opensuse] }
+- { setname: beneath-a-steel-sky,      name: beneath-a-steel-sky-cd }
+- { setname: beneath-a-steel-sky,      name: scummvm-bass }
+- { setname: berusky2,                 name: berusky-ii }
+- { setname: bibtool,                  name: bib-tool }
+- { setname: bicyclerepair,            name: bicyclerepair-py27 }
+- { setname: billardgl,                name: billard-gl }
+- { setname: bind,                     name: [dig,bind-rl,bind-tools,bind-toolsonly,bindutils,dnsutils], addflavor: true }
+- { setname: bind,                     name: bind9-devel, weak_devel: true }
+- { setname: bind,                     namepat: "bind[0-9_.-]+" }
+- { setname: bird,                     name: [bird-v6,bird6] }
+- { setname: bison,                    name: [bison-doc,bison-runtime], addflavor: true }
+- { setname: bison,                    name: [bison2,bison27] }
+- { setname: bitdefender,              name: bdc, ruleset: openpkg }
+- { setname: bitkeeper,                name: bitkeeper-development, weak_devel: true }
+- { setname: bitkeeper,                name: bitkeeper-production }
+- { setname: bisonc++,                 name: bisoncpp }
+- { setname: blackshades,              name: blackshades-svn, ignore: true }
+- { setname: blackshadeselite,         name: blackshades-elite-svn, ignore: true }
+- { setname: blas,                     name: [blas-reference,blas-docs], addflavor: docs }
+- { setname: blas,                     name: blas-tmg }
+- { setname: blasphemer,               name: blasphemer-wad }
+- { setname: blender,                  name: blender-binaries }
+- { setname: blender,                  namepat: "blender[0-9._-]+" }
+- { setname: blitz++,                  name: blitz, family: [gentoo,fedora,opensuse] } # XXX: recheck
+- { setname: blobby,                   name: blobby-volley-2 }
+- { setname: blobby,                   name: [blobby2,blobby-volley] }
+- { setname: blockattack,              name: block-attack-rise-of-the-blocks }
+- { setname: blockout,                 name: [blockout2,blockoutii] }
+- { setname: blop-lv2,                 name: blop.lv2 }
+- { setname: bluedevil,                name: bluedevil5 }
+- { setname: bluemsx-libretro,         name: libretro-bluemsx }
+- { setname: bmp,                      name: bmp-esound, addflavor: esound }
+- { setname: bnd,                      name: bnd1.50 }
+- { setname: boa-constructor,          name: boaconstructor }
+- { setname: bochs,                    name: bochs-gdb, addflavor: gdb }
+- { setname: boehm-gc,                 name: [boehmgc,boehm-gc-threaded,boehm-gc-redirect,boehm_garbage_collector,bdw-gc,gc] }
+- { setname: boehm-gc,                 name: libgc }
+- { setname: bogofilter,               name: [bogofilter-sqlite,bogofilter-tc], addflavor: true }
+- { setname: boinc,                    name: [boinc-client,boinc-nox] } # or to boinc-client?
+- { setname: bombono-dvd,              name: bombono }
+- { setname: bonnie++,                 name: bonniexx }
+- { setname: boomaga,                  name: boomaga-qt5, addflavor: true }
+- { setname: boost,                    name: ["python:boost","python:boost-libs","boost-python3"], addflavor: python }
+- { setname: boost,                    namepat: "boost-mpi-source[0-9-.]+", addflavor: boost-mpi }
+- { setname: boost,                    namepat: "(?:compat-)?boost[0-9_.-]*(?:-compat)?" }
+- { setname: boost,                    name: [boost-base], addflavor: true }
+- { setname: boswars,                  name: bos-wars }
+- { setname: botan,                    namepat: "(?:lib)?botan[0-9_.-]*" }
+- { setname: botan,                    name: botan-old-stable }
+- { setname: botan,                    name: botan-with-compression, addflavor: compression }
+- { setname: bouncycastle,             namepat: "bouncycastle[0-9._-]*" }
+- { setname: bouncycastle,             namepat: "bouncycastle[0-9._-]*" }
+- { setname: bouncycastle,             name: [bcmail,bouncycastle-mail], addflavor: mail }
+- { setname: bouncycastle,             name: [bcpg,bouncycastle-pg], addflavor: pg }
+- { setname: bouncycastle,             name: [bcpkix,bouncycastle-pkix,java-bouncycastle-bcpkix], addflavor: pkix }
+- { setname: bouncycastle,             name: [bcprov,java-bouncycastle-bcprov], addflavor: prov }
+- { setname: bouncycastle,             name: bctsp, addflavor: tsp } # merged to pkix?
+- { setname: bowtie,                   name: bowtie2 }
+- { setname: box2d,                    name: libbox2d }
+- { setname: bpython,                  name: [bpython-py27,bpython2] }
+- { setname: brasero,                  name: [brasero2,brasero-dvdcssfix] }
+- { setname: breakpad,                 name: google-breakpad }
+- { setname: bricscad,                 name: [bricscad-legacy,bricscadv16,bricscadv17] }
+- { setname: bricscad,                 name: bricscadv17-zh, addflavor: zh }
+- { setname: brisk-menu,               name: mate-brisk-menu }
+- { setname: brotli,                   name: [brotli-static,brotli-testdata,google-brotli,libbrotli,"python:brotli"], addflavor: true }
+- { setname: brotli,                   name: brotli06 }
+- { setname: brotli,                   name: brotli06-testdata, addflavor: brotli-testdata }
+- { setname: bsh,                      name: bsh2 }
+- { setname: bsnes-libretro,           name: libretro-bsnes }
+- { setname: btanks,                   name: battle-tanks }
+- { setname: btanks,                   name: btanks-data, addflavor: data }
+- { setname: bubbros,                  name: bub-n-bros, family: gentoo } # XXX: recheck
+- { setname: bucardo,                  name: "perl:bucardo" }
+- { setname: bugs-everywhere,          name: bugseverywhere }
+- { setname: bugzilla,                 namepat: "bugzilla[0-9._-]+" }
+- { setname: bullet,                   name: bullet-docs, addflavor: docs }
+- { setname: bullet,                   name: bullet3 }
+- { setname: bullet,                   name: libbullet }
+- { setname: burp,                     name: burp-backup }
+- { setname: burp,                     name: burp-backup-dev, untrusted: true }
+- { setname: burritun,                 name: "rust:burritun" }
+- { setname: busybox,                  name: [busybox-custom,busybox-norootreboot,busybox-static,mdev,mkinitcpio-busybox], addflavor: true }
+- { setname: byaccj,                   name: byacc-j, family: debuntu }
+- { setname: bzflag,                   name: bzflag-server, addflavor: server }
+- { setname: bzr,                      name: bazaar }
+- { setname: bzrtools,                 name: "python:bzrtools" }
+- { setname: bzrtools,                 name: bzr-tools }
+
+- setname: bareos
+  name:
+    - bareos-bat
+    - bareos-bconsole
+    - bareos-client
+    - bareos-client-static
+    - bareos-common
+    - bareos-database-common
+    - bareos-database-mysql
+    - bareos-database-postgresql
+    - bareos-database-sqlite3
+    - bareos-database-tools
+    - bareos-director
+    - bareos-director-python-plugin
+    - bareos-docs
+    - bareos-filedaemon
+    - bareos-filedaemon-python-plugin
+    - bareos-server
+    - bareos-storage
+    - bareos-storage-fifo
+    - bareos-storage-python-plugin
+    - bareos-storage-tape
+    - bareos-tools
+    - bareos-traymonitor
+    - bareos-webui
+  addflavor: true
+- { setname: bareos, name: bareos-devel, weak_devel: true }
+
+- setname: boost
+  name:
+    - boost-all
+    - boost-libs
+    - boost-headers
+    - boost-python-libs
+    - boost-python
+    - boost-mpi
+    - boost-bcp
+    - boost-libraries
+    - boost-python3-libs
+    - boost-63-compat
+    - boost-docs
+    - boost-jam
+  addflavor: true
+
+- setname: boost
+  name:
+    - boost-algorithm
+    - boost-align
+    - boost-any
+    - boost-array
+    - boost-asio
+    - boost-assert
+    - boost-assign
+    - boost-atomic
+    - boost-beast
+    - boost-bimap
+    - boost-bind
+    - boost-callable-traits
+    - boost-chrono
+    - boost-circular-buffer
+    - boost-compatibility
+    - boost-compute
+    - boost-concept-check
+    - boost-config
+    - boost-container
+    - boost-contextboost-conversion
+    - boost-convert
+    - boost-core
+    - boost-coroutine
+    - boost-coroutine2
+    - boost-crc
+    - boost-date-time
+    - boost-detail
+    - boost-disjoint-sets
+    - boost-dll
+    - boost-dynamic-bitset
+    - boost-endian
+    - boost-exception
+    - boost-fiber
+    - boost-filesystem
+    - boost-flyweightboost-foreach
+    - boost-format
+    - boost-function
+    - boost-function-typesboost-functional
+    - boost-fusion
+    - boost-geometry
+    - boost-gil
+    - boost-graph
+    - boost-graph-parallel
+    - boost-hana
+    - boost-heap
+    - boost-icl
+    - boost-integer
+    - boost-interprocess
+    - boost-interval
+    - boost-intrusive
+    - boost-io
+    - boost-iostreams
+    - boost-iterator
+    - boost-lambda
+    - boost-lexical-cast
+    - boost-local-function
+    - boost-locale
+    - boost-lockfree
+    - boost-log
+    - boost-logic
+    - boost-math
+    - boost-metaparse
+    - boost-moveboost-mp11
+    - boost-mpl
+    - boost-msm
+    - boost-multi-array
+    - boost-multi-index
+    - boost-multiprecision
+    - boost-numeric-conversion
+    - boost-odeint
+    - boost-optional
+    - boost-parameter
+    - boost-phoenix
+    - boost-poly-collection
+    - boost-polygon
+    - boost-pool
+    - boost-predef
+    - boost-preprocessor
+    - boost-process
+    - boost-program-options
+    - boost-property-map
+    - boost-property-treeboost-proto
+    - boost-ptr-container
+    - boost-qvm
+    - boost-random
+    - boost-range
+    - boost-ratio
+    - boost-rational
+    - boost-regex
+    - boost-scope-exit
+    - boost-serialization
+    - boost-signals
+    - boost-signals2
+    - boost-smart-ptr
+    - boost-sort
+    - boost-spirit
+    - boost-stacktrace
+    - boost-statechart
+    - boost-static-assert
+    - boost-system
+    - boost-test
+    - boost-thread
+    - boost-throw-exception
+    - boost-timer
+    - boost-tokenizer
+    - boost-tti
+    - boost-tuple
+    - boost-type-erasure
+    - boost-type-index
+    - boost-type-traits
+    - boost-typeof
+    - boost-ublas
+    - boost-units
+    - boost-unordered
+    - boost-utility
+    - boost-uuid
+    - boost-variant
+    - boost-vmd
+    - boost-wave
+    - boost-winapi
+    - boost-xpressive
+  addflavor: true

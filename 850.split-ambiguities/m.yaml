@@ -1,0 +1,59 @@
+# vim: tabstop=29 expandtab softtabstop=29
+
+- { name: maelstrom, ruleset: maemo, setname: maelstrom-maemo }
+
+- { name: mako, wwwpart: mako-project, setname: mako-wayland }
+- { name: mako, wwwpart: makotemplates, setname: "python:mako" }
+- { name: mako, category: lang, family: openwrt, setname: "python:mako" }
+- { name: mako, warning: "please classify me" }
+
+- { name: man, wwwpart: man-db,        setname: man-db }
+
+- { name: mailx, wwwpart: heirloom, setname: heirloom-mailx }
+- { name: mailx, verpat: "12\\..*", setname: heirloom-mailx }
+
+- { name: mars,                        category: games, setname: m.a.r.s. }
+- { name: mars,                        wwwpart: [marsshooter,mars-game], setname: m.a.r.s. }
+- { name: mars,                        wwwpart: www.mpibpc.mpg.de, setname: mars-proteins-assignment }
+- { name: mars,                        wwwpart: Sony-PS3/mars, setname: mars-runtime-system }
+- { name: mars,                        category: Development/Java, setname: mars-mips }
+- { name: mars,                        wwwpart: courses.missouristate.edu, setname: mars-mips }
+- { name: mars,                        warning: "please classify me" }
+
+- { name: mdp, wwwpart: toolkit, setname: "python:mdp" }
+- { name: mdp, wwwpart: visit1985, setname: mdp-markdown-presentation-tool }
+- { name: mdp, category: [doc,textproc], setname: mdp-markdown-presentation-tool }
+- { name: mdp, wwwpart: navy.mil, setname: mdp-multicast-file-transfer }
+- { name: mdp, wwwpart: tamentis, setname: mdp-password-manager }
+- { name: mdp, warning: "please classify me" }
+
+- { name: memphis, wwwpart: compilertools, setname: memphis-compilertools }
+
+- { name: mog,                         setname: mog-cat, family: freebsd }
+- { name: mog,                         setname: mog-game, family: slackbuilds }
+- { name: mog,                         warning: "please classify me" }
+
+- { name: mpd, wwwpart: [musicpd,mpd.wikia.com], setname: musicpd }
+- { name: mpd, category: [media-sound,Sound,audio], setname: musicpd }
+- { name: mpd, wwwpart: cs.arizona.edu/mpd, setname: mpd-compiler }
+- { name: mpd, warning: "please classify me" } # nothing should be left here
+- { name: musicpd, setname: mpd } # still use more canonical name
+
+- { name: mp3check, wwwpart: icculus, setname: mp3check-icculus }
+
+- { name: mpc, wwwpart: [musicpd,mpd.wikia.com], setname: musicpc }
+- { name: mpc, category: [media-sound,Sound,audio,Sound/Players,universe/sound], setname: musicpc }
+- { name: mpc, wwwpart: multiprecision.org, setname: gnumpc }
+- { name: mpc, category: dev-libs, setname: gnumpc }
+- { name: mpc, family: [rudix,hpux], setname: gnumpc }
+- { name: mpc, family: aosc, category: libs, setname: gnumpc }
+- { name: mpc, warning: "please classify me" } # nothing should be left here
+- { name: musicpc, setname: mpc } # still use more canonical name
+
+- { name: msgpack, category: dev-java, setname: "java:msgpack" }
+
+- { name: mu, wwwpart: [ntoll,mu-editor], setname: mu-editor }
+- { name: mu, wwwpart: kreogist, setname: kreogist-mu } # name taken form AUR package; may also use e.g. mu-music-manager
+# otherwise, maildir utils + emacs email client (mu4e)
+
+- { name: muse, setname: emacs-muse, family: gentoo, category: app-emacs }

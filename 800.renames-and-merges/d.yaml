@@ -1,0 +1,94 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- { setname: dapl,                     name: compat-dapl }
+- { setname: dapl,                     name: dapl-debug, addflavor: true }
+- { setname: darcs,                    name: "haskell:darcs" }
+- { setname: dart,                     name: dart-sdk }
+- { setname: dart,                     name: [dart-dev, dart-sdk-dev] } # XXX: be careful
+- { setname: dash.el,                  name: dash-el }
+- { setname: db,                       name: berkeley-db }
+- { setname: db,                       namepat: "db[0-9.]+" }
+- { setname: db,                       namepat: "libdb[0-9._-]*" }
+- { setname: dbench4,                  name: dbench4 }
+- { setname: dbmail,                   name: dbmail22 }
+- { setname: dboxfe,                   name: dboxfe2 }
+- { setname: dbus,                     name: [dbus-1-x11,dbus-docs,dbus-docs-selinux,dbus-nosystemd,dbus-x11,dbus-selinux], addflavor: true }
+- { setname: dbus,                     name: [dbus-1,dbus-libs] }
+- { setname: dbus-c++,                 name: [dbus-cplusplus,libdbus-c++] }
+- { setname: dbus-glib,                name: libdbus-glib }
+- { setname: dcc,                      name: dcc-dccd }
+- { setname: dconf,                    name: d-conf }
+- { setname: dconf-editor,             name: dconf-editor-3.20 }
+- { setname: ddclient,                 name: ddclient-ipv6 }
+- { setname: ddgr,                     name: "python:ddgr", addflavor: python }
+- { setname: ddrescue,                 name: [gddrescue,gnu_ddrescue] }
+- { setname: deadbeef,                 name: deadbeef-with-plugins }
+- { setname: deal.ii,                  name: [dealii,dealii-openmpi,deal-ii] }
+- { setname: defcon,                   name: linux-defcon, family: freebsd }
+- { setname: deis,                     name: [deis-client,deisctl] }
+- { setname: dejagnu,                  name: deja-gnu }
+- { setname: dell-unified-driver,      name: [dell-unified-driver-common,dell-unified-driver-printer,dell-unified-driver-scanner,dell-unified-printer-driver], addflavor: true }
+- { setname: devede,                   name: devedeng }
+- { setname: devhelp,                  name: devhelp-gtk2, addflavor: gtk2 }
+- { setname: devil,                    name: [devil-ilut,devil-ilut-vanilla], addflavor: true }
+- { setname: devil,                    name: libdevil }
+- { setname: dgen-sdl,                 name: dgen }
+- { setname: dhcp,                     name: [dhclient,isc-dhclient,isc-dhcp], addflavor: client }
+- { setname: dhcp,                     name: [isc-dhcpd], addflavor: server }
+- { setname: dhcp,                     name: [isc-dhcrelay], addflavor: relay }
+- { setname: dhcp,                     namepat: "isc-dhcp[0-9]*-(client|server|relay)", addflavor: $1 }
+- { setname: dhewm3,                   name: iodoom3-dhewm3 }
+- { setname: dia,                      name: dia-python, addflavor: python }
+- { setname: diffoscope,               name: "python:diffoscope" }
+- { setname: digitalbitbox,            name: [dbb-app,dbb-cli,digital-bitbox-app] }
+- { setname: dino,                     name: dino-unstable, ignore: true }
+- { setname: discord,                  name: discord-bin }
+- { setname: divide-and-succeed,       name: divideandsucceed }
+- { setname: djview,                   name: [djview,djview-qt4,djview-qt5,djview4,djvulibre-djview4], addflavor: true } # should be merged with djvulibre or not?
+- { setname: djvulibre,                name: [djvulibre-lib,djvulibre_qt4,djvulibre-tools,djvu] }
+- { setname: dkms,                     name: dkms-sorted, addflavor: sorted }
+- { setname: dlib,                     name: [dlib-cpp,libdlib] }
+- { setname: dlib,                     name: ["python:dlib", "python:dlib-cuda"], addflavor: true }
+- { setname: dmd,                      name: dmd2 }
+- { setname: dnscrypt-proxy,           name: [dnscrypt-proxy-go,dnscrypt-proxy2] }
+- { setname: doas,                     name: opendoas }
+- { setname: docbook-dsssl,            name: [docbook-dsssl-doc,docbook-style-dsssl-doc] }
+- { setname: docbook-dsssl,            name: [docbook-dsssl-stylesheets,docbook-style-dsssl] }
+- { setname: docbook-sgml,             name: docbook-sgml-dtd }
+- { setname: docbook-sgml,             namepat: "docbook-sgml[0-9._-]+" }
+- { setname: docbook-xsl,              name: [docbook-xsl-docs], addflavor: docs }
+- { setname: docbook-xsl,              name: [docbook-xsl-nons,docbook-xsl-stylesheets,docbook-style-xsl] } # assuming non-namespaced is "normal" docbook-xsl
+- { setname: docbook-xsl,              name: [docbook-xsl-ns,docbook-xsl-ns-stylesheets,docbook-style-xsl-ns], addflavor: ns }
+- { setname: docker,                   name: [docker-io,docker.io] }
+- { setname: docker,                   name: docker-git-x86, ignore: true } # ignore version just for the cause, because of suspicious name
+- { setname: doit,                     name: "python:doit" }
+- { setname: dolphin-emu,              name: dolphin-emu4 }
+- { setname: doom-data,                name: doomgame-iwad } # ravenports
+- { setname: dogecoin,                 name: [dogecoind,dogecoin-qt,dogecoin-daemon] }
+- { setname: dosbox,                   name: [dosbox-sdl2,dosbox-debug,dosbox-multilib-patched,dosbox-ex], addflavor: true }
+- { setname: dosbox,                   name: dosbox-dev }
+- { setname: double-conversion,        name: libdouble-conversion }
+- { setname: doublecmd,                name: [doublecmd-gtk2,doublecmd-qt,doublecmd-qt4,doublecmd-qt5] }
+- { setname: dovecot,                  namepat: "dovecot[0-9]+" }
+- { setname: doxygen,                  name: [doxygen-gui,doxygen-docs,doxygen-doc,doxywizard], addflavor: true }
+- { setname: dr14tmeter,               name: dr14_tmeter }
+- { setname: drbd,                     namepat: "drbd[0-9]+" }
+- { setname: drbd,                     name: [drbd-doc,drbd-kernel,drbd-kmod], addflavor: true }
+- { setname: drbd,                     name: drbd90-kmod, addflavor: drbd-kmod }
+- { setname: drbd-utils,               name: drbd90-utils }
+- { setname: drbl,                     name: drbl-experimental, ignore: true }
+- { setname: dreampie,                 name: "python:dreampie" }
+- { setname: drgeo,                    name: drgeo1 }
+- { setname: drpython,                 name: drpython-py27 }
+- { setname: dspam,                    name: [dspam-mysql,dspam-pgsql,dspam-web] }
+- { setname: dtc,                      name: [device-tree-compiler,device-tree-compiler-1.4.2,dtc-git-patched] }
+- { setname: duktape,                  name: [duktape-lib,libduktape] }
+- { setname: dummyhttp,                name: "rust:dummyhttp" }
+- { setname: dungeon-crawl,            name: dungeoncrawl }
+- { setname: "dvd+rw-tools",           name: dvdrw-tools }
+- { setname: dwarf-fortress,           name: dwarffortress }
+- { setname: dwarf-fortress,           name: linux-dwarffortress }
+- { setname: dwarf-fortress,           name: linux-dwarffortress, family: freebsd }
+- { setname: dwm-status,               name: "rust:dwm-status" }
+- { setname: dynamips,                 name: dynamips-community, family: freebsd }
+- { setname: dzen,                     name: dzen2 }

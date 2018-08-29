@@ -1,0 +1,75 @@
+# vim: tabstop=29 expandtab softtabstop=29
+
+# "A tool for building identical machine images" vs "Bash wrapper for pacman and aur"
+- { name: packer, setname: "pacman-packer", family: arch  }
+
+- { name: pachi, wwwpart: pachi.or.cz, setname: pachi-go }
+
+- { name: pacman, wwwpart: ebuc99, setname: pacman-ebuc99 }
+- { name: pacman, wwwpart: pjsfreeware, setname: pacman-pjs }
+- { name: pacman, verpat: "0\\.9(\\..*)?", setname: pacman-ebuc99 }
+- { name: pacman, ver: "10", setname: pacman10 } # origin unknown
+- { name: pacman, ver: "1.002", setname: pacman1.002 } # origin unknown
+
+- { name: perl, wwwpart: strawberry, setname: strawberryperl }
+
+- { name: pg-top, wwwpart: cpan, setname: "perl:pgtop" }
+
+- { name: pgf, wwwpart: libpgf, setname: libpgf }
+
+- { name: picard,                      setname: java-picard, wwwpart: picard.sourceforge.net }
+
+# pico is a part of corresponding email clients
+- { name: pico, wwwpart: washington.edu/pine, setname: pine }
+- { name: pico, wwwpart: washington.edu/alpine, setname: alpine }
+
+# https://github.com/PHPOffice/PHPExcel vs. https://github.com/iliaal/php_excel
+- { name: "php56:excel", wwwpart: php_excel,           setname: "php56:php_excel" }
+- { name: "php56:excel", wwwpart: phpoffice,           setname: "php56:phpexcel" }
+
+- { name: pkgdiff, ruleset: pkgsrc, setname: pkgdiff-pkgsrc }
+
+- { name: plank, wwwpart: pinterest, setname: plank-framework }
+
+- { name: ply, wwwpart: dabeaz, setname: "python:ply" }
+- { name: ply, ruleset: gobolinux, setname: "python:ply" }
+
+- { name: polly, verpat: "4\\..*",     setname: polly-llvm-opt            } # polyhedral optimizationa for llvm
+- { name: polly, verpat: "0\\.93\\..*", setname: polly-twitter-client     } # twitter client
+- { name: polly, warning: "please classify me" }
+
+- { name: poster, setname: "python:poster", category: python } # python module, not a postscript utility
+
+- { name: pq, wwwpart: progressquest, setname: progress-quest }
+- { name: pq, wwwpart: libpq, setname: libpq }
+
+- { name: preferences, family: freebsd, setname: gnustep-preferences } # gnustep; may be not ambiguity (yet), but too generic name for sure
+
+- { name: prest, wwwpart: prest.de, setname: "perl:text-restructured" }
+
+# XMPP IM program vs. open-source quantum chemistry
+- { name: psi, category: sci-chemistry, setname: psi4 }
+- { name: psi, wwwpart: psicode.org, setname: psi4 }
+- { name: psi4, verpat: "3\\.4.*", setname: psicode }
+
+- { name: ptop, wwwpart: [black-perl, darxtrix], setname: ptop-darxtrix } # github.com/black-perl redirectes to darxtrix
+- { name: ptop, wwwpart: postgresql.org, setname: pg-top }
+
+- { name: pulp, wwwpart: bodil, setname: "node:pulp" }
+
+- { name: pulseaudio-equalizer, wwwpart: freedesktop.org/wiki/Software/PulseAudio, setname: pulseaudio, addflavor: equalizer }
+
+- { name: pwsafe, ruleset: maemo, setname: pwsafe-maemo }
+- { name: pwsafe, wwwpart: [passwordsafe,pwsafe.org], setname: passwordsafe }
+
+- { name: "python:antlr", wwwpart: [antlr.org, antlr2.org], setname: antlr }
+
+- { name: "python:eventlib", setname: "python:eventlib-icanblink", wwwpart: icanblink }
+
+- { name: "python:keystone", wwwpart: openstack, setname: openstack-keystone }
+- { name: "python:keystone", wwwpart: keystone-engine, setname: "python:keystone-engine" }
+
+- { name: "python:ldap", setname: "python:python-ldap", wwwpart: python-ldap }
+- { name: "python:ldap", setname: "python:python-ldap", ruleset: [sisyphus,openbsd,pclinuxos] }
+
+- { name: "python:planet", setname: planet, wwwpart: planetplanet }

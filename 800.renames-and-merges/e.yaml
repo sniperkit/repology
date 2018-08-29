@@ -1,0 +1,103 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- { setname: e2fsprogs,                name: [e2fsprogs-libblkid,e2fsprogs-libs,e2fsprogs-libss,e2fsprogs-libuuid,e2fsprogs1.41] }
+- { setname: eaglemode,                name: eagle-mode }
+- { setname: easy-rsa,                 name: [easyrsa,easy-rsa2,easy-rsa-old] }
+- { setname: easygit,                  name: [easy-git,eg] }
+- { setname: easyrpg-player,           name: easyrpg, family: openbsd }
+- { setname: easysoap++,               name: easysoap }
+- { setname: easyspice,                name: easy_spice }
+- { setname: easytag,                  name: [easytag24,easytag-gtk2] }
+- { setname: easytag,                  name: easy-tag }
+- { setname: eawpats,                  name: [timidity-eaw-patches,timidity-eawpatches,eawpatches] }
+- { setname: ebview,                   name: ebview-gtk2 }
+- { setname: eclipse,                  name: eclipse-java }
+- { setname: ecm-tools,                name: ecmtools }
+- { setname: ecrire,                   name: ecrire-git }
+- { setname: ecryptfs-utils,           name: ecryptfs}
+- { setname: edgar,                    name: the-legend-of-edgar }
+- { setname: ee,                       name: ee-editor }
+- { setname: eekboard,                 name: eekboard-gtk2 }
+- { setname: eid-mw,                   name: [beid-middleware,beid,libbeid] }
+- { setname: eid-viewer,               name: eid-viewer-bin }
+- { setname: eigen,                    namepat: "eigen[0-9._-]+" }
+- { setname: eigen,                    name: libeigen }
+- { setname: eigen,                    name: libeigen2-devel, weak_devel: true }
+- { setname: einstein,                 name: einstein-puzzle, family: pkgsrc }
+- { setname: eiskaltdcpp,              namepat: eiskaltdcpp-(cli|daemon|data|gtk|lib|qt|core) }
+- { setname: elasticsearch,            namepat: "elasticsearch[0-9]+" }
+- { setname: elbcli,                   name: elb-tools }
+- { setname: electricfence,            name: electric-fence }
+- { setname: elfutils,                 name: elfutils-libelf }
+- { setname: elftoolchain,             name: libexecinfo, family: ravenports, addflavor: $0 }
+- { setname: elixir,                   name: elixir-lang }
+- { setname: elm-format,               namepat: "elm-format[0-9._-]+(?:-exp)?" }
+- { setname: elm-mua,                  name: elm-me, addflavor: me }
+- { setname: elvis,                    name: elvis-x11 }
+- { setname: emacs,                    name: [emacs-24bit,emacs-nox,emacs-docs,emacs-minimal,emacs-no-x-toolkit,emacs-nox-24bit,emacs-canna], addflavor: true }
+- { setname: emacs,                    name: [emacs-devel,emacs-git], weak_devel: true }
+- { setname: emacs,                    name: [emacs-devel_nox], addflavor: nox11, weak_devel: true }
+- { setname: emacs,                    name: emacs-git-gtk2, addflavor: gtk2, ignore: true }
+- { setname: emacs,                    namepat: "emacs[0-9.-]+(-non-dfsg)?" }
+- { setname: emacs-lua-mode,           name: emacs-lua }
+- { setname: emacs-mediawiki,          name: mediawiki, category: app-emacs }
+- { setname: emacs-mmm-mode,           name: emacs-mmm }
+- { setname: embree,                   name: embree2 }
+- { setname: emby,                     name: emby-server }
+- { setname: emby,                     name: emby-server-beta, ignore: true }
+- { setname: emotion-generic-players,  name: emotiongenericplayers }
+- { setname: empty,                    name: empty-expect }
+- { setname: emptyclip,                name: empty-clip }
+- { setname: emptyepsilon,             name: empty-epsilon }
+- { setname: emulationstation,         name: emulation-station }
+- { setname: enblend-enfuse,           name: enblend }
+- { setname: enchant,                  namepat: "enchant[0-9._-]+" }
+- { setname: enchant,                  name: [enchant-hspell,enchant-pure], addflavor: true }
+- { setname: enemy-territory,          name: enemyterritory }
+- { setname: enet,                     name: [libenet,enet1.2] }
+- { setname: engauge,                  name: [engauge-digitizer,engauge-samples], addflavor: true }
+- { setname: enigma,                   name: enigma_sdl }
+- { setname: enscript,                 namepat: "enscript-.*", family: freebsd } # enscript-a4, enscript-letter, enscript-letterdj
+- { setname: entagged,                 name: entagged-tageditor, family: gentoo }
+- { setname: enigma-sgtatham,          name: enygma, family: freebsd }
+- { setname: eot-utils,                name: eot-utilities }
+- { setname: ephoto,                   name: ephoto-git, ignore: true }
+- { setname: epiphany,                 name: epiphany-browser }
+- { setname: epiphany,                 name: epiphany-unstable, ignore: true }
+- { setname: epl,                      name: epl.el, family: freebsd }
+- { setname: epsxe,                    name: epsxe1.9 }
+- { setname: epydoc,                   name: "python:epydoc" }
+- { setname: eric,                     name: [eric-common,eric-i18n,"python:eric"], addflavor: true }
+- { setname: eric,                     name: [eric4,eric5,eric6] }
+- { setname: eric,                     namepat: "([a-z]{2})-eric6", addflavor: $1 } # freebsd l10n ports
+- { setname: eric,                     namepat: "eric-(i18n-.*)", addflavor: $1 }
+- { setname: eric,                     name: [eric6-qt4, eric6-qt5], addflavor: true }
+- { setname: "erlang:cl",              name: cl }
+- { setname: "erlang:esdl",            name: ["erlang:sdl",esdl] }
+- { setname: etcd,                     namepat: "coreos-etcd[0-9._-]*" }
+- { setname: eternal-lands$1,          namepat: "eternallands(.*)" }
+- { setname: eternal-lands,            name: el, family: freebsd }
+- { setname: eternal-lands-data,       name: el-data, family: freebsd }
+- { setname: eternalterminal,          name: eternal-terminal }
+- { setname: eternalterminal,          name: [eternalterminal-client,eternalterminal-server], addflavor: true }
+- { setname: eteroj.lv2,               name: eteroj-lv2 }
+- { setname: ettercap,                 name: ettercap-gtk }
+- { setname: etw,                      name: eat-the-whistle }
+- { setname: etw,                      name: etw-data, addflavor: data }
+- { setname: eudev,                    name: [eudev-debug,eudev-libudev,eudev-with-hwdb,libeudev], addflavor: true }
+- { setname: eventlog,                 name: libevtlog }
+- { setname: evince,                   name: [evince-light,evince-lite,evince2,evince2-light,evince-no-gnome,evince-lcdfilter] }
+- { setname: evolus-pencil,            name: evoluspencil }
+- { setname: evopedia,                 name: evopedia_qt }
+- { setname: exa,                      name: "rust:exa" }
+- { setname: exact-image,              name: exactimage }
+- { setname: exaile,                   name: exaile-devel, weak_devel: true }
+- { setname: excalibar,                name: libexcalibar, addflavor: lib }
+- { setname: exercism-cli,             name: [exercism,"go:github-exercism-cli"] }
+- { setname: exempi,                   name: libexempi }
+- { setname: exim,                     name: exim4 }
+- { setname: exosip,                   name: [libexosip,libexosip2,exosip2] }
+- { setname: expat,                    name: expat21 }
+- { setname: extremetuxracer,          name: [etracer,extreme-tuxracer,extreme-tux-racer] }
+- { setname: eyed3,                    name: "python:eyed3" }
+- { setname: eyed3,                    name: eye-d3 }

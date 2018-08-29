@@ -1,0 +1,119 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- { setname: oath-toolkit,             name: [oath,oathtool] }
+- { setname: obby,                     name: libobby }
+- { setname: obfsproxy,                name: ["python:obfsproxy", "python:obfsproxy-tor"] }
+- { setname: objectweb-asm,            namepat: "(java-|objectweb-)?asm[0-9]*" }
+- { setname: objectweb-asm,            name: libasm4-java }
+- { setname: "ocaml:opam-file-format", name: opam-file-format }
+- { setname: octave,                   namepat: "octave[0-9._-]+" }
+- { setname: octopi,                   name: [octopi-cachecleaner,octopi-debug,octopi-kde,octopi-notifier,octopi-notifier-frameworks,octopi-notifier-noknotify,octopi-notifier-qt5,octopi-pacmanhelper,octopi-repoeditor], addflavor: true }
+- { setname: odoo,                     namepat: "odoo[0-9._-]+" }
+- { setname: offlinemsmtp,             name: "python:offlinemsmtp" }
+- { setname: ogre,                     name: [ogre-docs,ogre-samples], addflavor: true }
+- { setname: ogre,                     name: ogre3d }
+- { setname: ogre,                     namepat: "ogre[0-9._-]+" }
+- { setname: olm,                      name: libolm }
+- { setname: ombi,                     name: [ombi-beta,ombi-dev] }
+- { setname: oniguruma,                name: [onig,libonig], addflavor: onig }
+- { setname: oniguruma,                namepat: "oniguruma[0-9._-]+" }
+- { setname: onehouronelife,           namepat: onehouronelife-latest, rolling: true }
+- { setname: onehouronelife,           name: one-hour-one-life }
+- { setname: onscripter,               name: onscripter-1byte, addflavor: 1byte }
+- { setname: opaline,                  name: "ocaml:opaline" }
+- { setname: opam,                     name: ["ocaml:opam",opam2] }
+- { setname: open-vm-tools,            name: [open-vm-tools-dkms,open-vm-tools-lts-trusty], addflavor: true }
+- { setname: openal,                   name: [openal-static,openal-examples], addflavor: true }
+- { setname: openbabel,                name: open-babel }
+- { setname: openblas,                 name: [openblas-lapack,openblas-lapack-ilp64] }
+- { setname: opencc,                   name: opencc-doc, addflavor: doc }
+- { setname: opencollada,              name: libopencollada }
+- { setname: opencore-amr,             name: libopencore-amr0 }
+- { setname: opencv,                   name: [opencv2,libopencv3.4,opencv-legacy] }
+- { setname: opencv,                   name: [opencv-contrib-face,opencv-core,opencv-docs,opencv-cuda,opencv-java,opencv-qt5,opencv-samples], addflavor: true }
+- { setname: opendbx,                  name: libopendbx }
+- { setname: opendkim,                 name: libopendkim }
+- { setname: opendnssec,               name: opendnssec2 }
+- { setname: opendht,                  name: "python:opendht" }
+- { setname: openjade,                 name: jade, family: aosc }
+- { setname: openjade,                 namepat: "openjade[0-9._-]+" }
+- { setname: openjdk,                  namepat: "openjdk[0-9._-]*(?:-doc)?" }
+- { setname: openjpeg,                 name: [openjp2,libopenjpeg2.0] }
+- { setname: openjpeg,                 namepat: "(?:lib)?openjpeg[0-9]*" }
+- { setname: openldap,                 name: [compat-openldap,libldap,openldap-client,openldap-cloak,openldap-doc,openldap-nops,openldap-sasl-client,openldap-server,openldap-smbk5pwd], addflavor: true }
+- { setname: openldap,                 name: openldap-overlays-devel, addflavor: openldap-overlays, weak_devel: true }
+- { setname: openldap,                 name: openldap2 }
+- { setname: openmesh,                 name: open-mesh }
+- { setname: openmpi,                  name: open-mpi }
+- { setname: openobex,                 name: libopenobex }
+- { setname: openocd,                  name: open-ocd }
+- { setname: openoffice,               name: apache-openoffice }
+- { setname: openoffice,               name: apache-openoffice-devel, weak_devel: true }
+- { setname: openoffice,               name: openoffice-bin, addflavor: bin }
+- { setname: openoffice,               name: openoffice.org }
+- { setname: openr2,                   namepat: "(?:lib)?openr2[0-9._-]*" }
+- { setname: openrc,                   name: [openrc-debug,openrc-init], addflavor: true }
+- { setname: opensc,                   namepat: "opensc[0-9._-]+" }
+- { setname: opensc,                   name: opensc-openct, addflavor: openct }
+- { setname: openscenegraph,           name: [openscenegraph-qt,openscenegraph-qt4,openscenegraph-data], addflavor: true }
+- { setname: openscenegraph,           name: [open-scene-graph,osg] }
+- { setname: openscenegraph,           namepat: "openscenegraph[0-9.-]+" }
+- { setname: openscenegraph,           name: osg-devel, weak_devel: true }
+- { setname: openshadinglanguage,      namepat: "openshadinglanguage[0-9._-]+" }
+- { setname: openshot,                 name: openshot-qt, addflavor: qt }
+- { setname: opensmtpd-extras,         namepat: "opensmtpd-extras-.*", family: [freebsd,openbsd] }
+- { setname: opensp,                   name: opensp-doc, addflavor: doc }
+- { setname: openssh,                  name: openssh-portable }
+- { setname: openssh,                  name: ssh-copy-id, addflavor: ssh-copy-id }
+- { setname: ossp-al,                  name: al, ruleset: openpkg }
+- { setname: ossp-cfg,                 name: cfg, ruleset: openpkg }
+- { setname: ostree,                   name: libostree }
+- { setname: openttd-$0,               namepat: "open(?:gfx|sfx)" }
+- { setname: openttd-$0,               namepat: openmsx, wwwpart: openttd }
+- { setname: openttd-open$1,           namepat: "openttd[-_](gfx|sfx|msx)" }
+- { setname: openttd-opengfx,          name: openttd-opengfx-snapshot, ignore: true }
+- { setname: opentx,                   name: [opentx-companion,opentx-companion21] }
+- { setname: opentyrian,               name: open-tyrian }
+- { setname: openvpn,                  name: [openvpn-mbedtls,openvpn-polarssl,openvpn2,openvpn23] }
+- { setname: openzwave,                name: open-zwave }
+- { setname: openssl,                  namepat: "(?:lib)?openssl(?:[0-9._-]*|[0-9._-]+[a-z]?)?" }
+- { setname: openssl,                  name: openssl-devel, weak_devel: true }
+- { setname: opus,                     name: libopus }
+- { setname: opusfile,                 name: libopusfile }
+- { setname: orafce,                   namepat: "(postgresql[0-9._-]*)-orafce", addflavor: $1 }
+- { setname: orcania,                  name: liborcania }
+- { setname: orbit2,                   name: orbit }
+- { setname: orbit2,                   name: orbit2-reference, addflavor: reference }
+- { setname: ortp,                     namepat: "(?:lib)?ortp[0-9._-]*" }
+- { setname: osgearth,                 name: osgearth-qt4, addflavor: true }
+- { setname: osip,                     name: [libosip,libosip2,osip2] }
+- { setname: otb,                      name: [orfeo-toolbox,orfeotoolbox] }
+
+- setname: openssh
+  name:
+    - gsi-openssh
+    - openssh-gssapi
+    - openssh-knock
+    - openssh-krb5
+    - openssh-multiple-bindaddress
+    - openssh-secp256k1
+    - openssh-selinux
+    - openssh-ssh1
+    - openssh-ubuntu
+    - openssh-with-hpn
+    - openssh-with-kerberos
+  addflavor: true
+
+- setname: openssl
+  name:
+    - openssl-1.0-chacha20
+    - openssl-chacha
+    - openssl-chacha20
+    - openssl-no-aesni
+    - openssl-pre
+    - openssl-purify
+    - openssl-static
+    - openssl-stream
+    - openssl-tls1.3
+  addflavor: true
+  ignore: true # XXX: why?

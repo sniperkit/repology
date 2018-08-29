@@ -1,0 +1,6 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- { ruleset: wikidata, resetflavors: true }
+
+# finalize, catch-all rule
+- { noflag: preserve_case, tolowername: true }

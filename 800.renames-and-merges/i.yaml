@@ -1,0 +1,71 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- { setname: i3,                       name: [i3-kde,i3-lazy,i3-wm-iconpatch], addflavor: true }
+- { setname: i3,                       name: [i3-wm,i3wm] }
+- { setname: i3status,                 name: i3status-manjaro, addflavor: manjaro }
+- { setname: i3wsr,                    name: "rust:i3wsr" }
+- { setname: iagno,                    name: gnome-games-iagno }
+- { setname: iannix,                   name: iannix-qt5, addflavor: true }
+- { setname: iausofa,                  name: [sofa,sofa_c,iausofa-c] }
+- { setname: iausofa,                  name: sofa-shared, addflavor: shared }
+- { setname: icecast,                  name: icecast2 }
+- { setname: icecat,                   name: icecat-debug, addflavor: debug }
+- { setname: icecat,                   namepat: "icecat-(l10n.*)", addflavor: $1 }
+- { setname: icedove,                  namepat: "icedove-(l10n.*)", addflavor: $1 }
+- { setname: ices,                     namepat: "ices[0-9]+" }
+- { setname: icesl,                    name: icesl-beta }
+- { setname: icewm,                    name: icewm2 }
+- { setname: iceweasel-uxp,            namepat: "iceweasel-uxp-(l10n-.*)", addflavor: $1 }
+- { setname: icon,                     name: icon-lang }
+- { setname: "icons:zafiro",           name: [zafiro-icon-theme,zafiro-icons] }
+- { setname: icu,                      name: [icu-docs,icu-doxygen-docs,icu-layoutex,icu-staticlibs,icu-lx,icu4c,libicu4c], addflavor: true }
+- { setname: icu,                      name: icu55-staticlibs, addflavor: icu-staticlibs }
+- { setname: icu,                      namepat: "(?:compat-)?(?:lib)?icu[0-9.-]*" }
+- { setname: icu4j,                    namepat: "icu4j[0-9.-]+" }
+- { setname: icu4j,                    name: java-icu4j }
+- { setname: igal,                     namepat: "igal[0-9]+" }
+- { setname: iksemel,                  name: libiksemel }
+- { setname: imagemagick,              name: [imagemagick-q8,imagemagick-q16,imagemagick-doc,imagemagick-fftw,imagemagick-full,imagemagick-full-doc,imagemagick-no-hdri,imagemagick-nox], addflavor: true }
+- { setname: imagemagick,              namepat: "(?:compat-)?imagemagick[0-9]+" }
+- { setname: imagemagick,              name: [libmagick,libmagick6], addflavor: lib }
+- { setname: imagemagick,              name: [libmagick-fftw,libmagick-full], addflavor: true }
+- { setname: imagemagick,              name: imagemagick-git-doc, addflavor: doc, ignore: true }
+- { setname: imhangul,                 name: imhangul-gtk2, addflavor: gtk2 }
+- { setname: imhangul,                 name: imhangul-gtk3, addflavor: gtk3 }
+- { setname: imhangul,                 name: imhangul3 }
+- { setname: include-what-you-use,     name: iwyu }
+- { setname: indent,                   name: [gnu-indent,gindent] }
+- { setname: infamousplugins,          name: [infamous-plugins,infamous-plugins-lv2] }
+- { setname: infon,                    name: infon-battle-arena }
+- { setname: ingen,                    name: ingen-unstable, ignore: true }
+- { setname: iniparser,                name: libiniparser }
+- { setname: inn,                      namepat: "inn[0-9]+" }
+- { setname: inotify-tools,            name: inotify-tools-inc, addflavor: inc }
+- { setname: insighttoolkit,           name: [insighttoolkit4,insight-toolkit] }
+- { setname: intel-microcode,          name: [microcode-intel,microcode-data-intel,intel-microcode-netbsd] }
+- { setname: intel-microcode,          name: microcode, family: [mageia,rosa] } # limit family for safely
+- { setname: intellij-idea-community,  name: [intellij-idea-ce,idea-community,intellij-idea-community-edition,intellij] }
+- { setname: intellij-idea-community,  name: intellij-idea-ce-eap, ignore: true }
+- { setname: intellij-idea-ultimate,   name: [idea-ultimate,intellij-idea-ultimate-edition,intellij-idea-ue-bundled-jre,intellij-ultimate] }
+- { setname: intellij-idea-ultimate,   name: intellij-idea-ue-eap, ignore: true }
+- { setname: iozone,                   name: [iozone21, iozone3] }
+- { setname: ipcalc,                   name: gnu-ipcalc } # freebsd - no relation to gnu actually
+- { setname: iperf,                    name: [iperf2,iperf3] }
+- { setname: ipopt,                    name: coin-or-ipopt }
+- { setname: iproute2,                 name: iproute2-cake, addflavor: cake }
+- { setname: iproute2,                 name: iproute2-doc, addflavor: doc }
+- { setname: iputils,                  name: tracepath, addflavor: yes } # split in termux
+- { setname: ipython,                  name: ["python:ipython",ipython,ipython2,ipython3,python2-ipython] }
+- { setname: ir-lv2,                   name: ir.lv2 }
+- { setname: ircd-ratbox,              name: ratbox, ruleset: openpkg }
+- { setname: ircii,                    name: ircii-current, ignore: true }
+- { setname: irrlicht,                 name: [irrlicht-docs,irrlicht-pkgconfig], addflavor: true }
+- { setname: isl,                      name: isl-lts }
+- { setname: isl,                      namepat: "(?:lib)?isl[0-9._-]*" }
+- { setname: iso8879,                  name: iso_8879 }
+- { setname: ispell-uk,                name: aspell-uk, ver: ["1.6.5","1.8.0"] } # see ftp://ftp.gnu.org/gnu/aspell/dict/uk/
+- { setname: italc,                    namepat: "italc[0-9]+" }
+- { setname: itcl,                     namepat: "itcl[0-9]+" }
+- { setname: itk,                      namepat: "itk[0-9]+" }
+- { setname: itk,                      namepat: "insighttoolkit[0-9]*" }
+- { setname: ivan,                     name: iter-vehemens-ad-necem }

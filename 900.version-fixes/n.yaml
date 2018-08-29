@@ -1,0 +1,42 @@
+# vim: tabstop=39 expandtab softtabstop=39
+
+- { name: nautilus,                    verpat: "[0-9]+\\.[0-9]*[13579]\\..*",              devel: true }
+- { name: nawk,                        vergt: "20121220",                                  noscheme: true } # weird way of using noscheme, but there are no (https://github.com/onetrueawk/awk) versions after last 20121220 official release
+- { name: nbwmon,                      verpat: "20[0-9]{6}",                               snapshot: true }
+- { name: nbwmon,                      ver: "20140917",                                    outdated: true } # at least 0.5.1 and 0.5.2 released since then: https://github.com/causes-/nbwmon/releases
+- { name: ncurses,                     verpat: ".*20[0-9]{6}.*",                           snapshot: true }
+- { name: ndpi,                        verpat: ".*20[0-9]{2}.*",                           snapshot: true }
+- { name: ndpi,                        verpat: "2\\.2\\.2\\..*",                           incorrect: true }
+- { name: neofetch,                    verpat: "20[0-9]{6}",                               snapshot: true } # aosc
+- { name: neovim-qt,                   ver: "0.2.9",                 ruleset: aur,         incorrect: true }
+- { name: neovim-qt,                                                 ruleset: aur,         untrusted: true }
+- { name: net-tools,                   verpat: "20[0-9]{6}",                               snapshot: true } # aosc snapshot
+- { name: netcat-openbsd,              verpat: "20[0-9]{6}.*",                             snapshot: true } # pkgsrc garbage
+- { name: netcat-openbsd,              verpat: "[0-9]+\\.[0-9]{3}_.*",                     incorrect: true } # debian suffixes
+- { name: netpbm,                      ver: "10.82.01",              ruleset: macports,    incorrect: true } # https://sourceforge.net/p/netpbm/code/HEAD/tree/release_number/
+- { name: netpbm,                                                    ruleset: macports,    untrusted: true }
+- { name: netpbm,                      verpat: "[0-9]{4}",                                 incorrect: true } # aosc, termux wtf
+- { name: netperf,                     verpat: ".*20[0-9]{6}.*",                           snapshot: true }
+- { name: networkmanager,              verpat: "[0-9]+\\.[0-9]*[13579]\\..*",              devel: true }
+- { name: ngrok,                       ver: [stable,4VmDzA7iaHb],    ruleset: scoop,       incorrect: true }
+- { name: ngrok,                                                     ruleset: scoop,       untrusted: true }
+- { name: nitrogen,                    verpat: "20[0-9]{6}.*",                             snapshot: true }
+- { name: nkf,                         verpat: "2\\.[0-9]{2}",                             incorrect: true } # it's X.Y.Z, not X.YZ
+- { name: no-more-secrets,             verpat: "[0-9]{8}",                                 incorrect: true } # slitaz
+- { name: noice,                       verpat: "20[0-9]{2}.*",                             snapshot: true }
+- { name: noip,                        verpat: "[0-9]+\\.[0-9]+\\.[0-9]+-.*",              incorrect: true} # nix fake
+- { name: notify-osd,                  ver: "0.9.35",                ruleset: [arch,debuntu], incorrect: true } # https://launchpad.net/notify-osd
+- { name: notion,                      verpat: "20[0-9]{6}.*",                             incorrect: true } # it's 3-YYYYMMDD, not just date
+- { name: novnc,                       verpat: "201[1234567].*",                           outdated: true }
+- { name: novnc,                       verpat: "20[0-9]{2}.*",                             snapshot: true }
+- { name: nss-ldap,                    verpat: "1\\.([0-9]{3,})",                          setver: "$1" } # FreeBSD garbage
+- { name: npapi-sdk,                   ver: "0.27.3r23",                                   incorrect: true }
+- { name: npm,                         ver: ["5.5.0", "5.5.1"],                            devel: true } # should be updated manually
+- { name: ntfs-3g,                     verpat: ".*ar.*",                                   successor: true } # http://jp-andre.pagesperso-orange.fr/advanced-ntfs-3g.html
+- { name: ntp,                         verpat: "([0-9]+\\.[0-9]+\\.[0-9]+)\\.([0-9]+)",    setver: "$1p$2" }
+- { name: ntp,                                                                             p_is_patch: true }
+- { name: numptyphysics,                                                                   noscheme: true }
+- { name: numptyphysics-npcomplete,                                                        noscheme: true }
+- { name: nuvie,                                                                           noscheme: true }
+- { name: nvclock,                     verpat: ".*20[0-9]{6}",                             snapshot: true }
+- { name: nzbget,                      verpat: ".*r.*",                                    snapshot: true } # 20.0r<rev> and 20.0pre<rev> garbage
