@@ -1,3 +1,6 @@
+# Sniperkit-Bot
+# - Status: analyzed
+
 - name: msys2_mingw
   type: repository
   desc: MSYS2 mingw

@@ -1,3 +1,6 @@
+# Sniperkit-Bot
+# - Status: analyzed
+
 language: python
 sudo: true
 addons:
@@ -95,7 +98,7 @@ before_install:
   - pip install voluptuous
 
   # get rules
-  - git clone --depth=1 https://github.com/repology/repology-rules.git rules.d
+  - git clone --depth=1 https://github.com/sniperkit/snk.fork.repology-rules.git rules.d
 before_script:
   - sudo -u postgres psql -c "CREATE DATABASE repology_test;"
   - sudo -u postgres psql -c "CREATE USER repology_test WITH PASSWORD 'repology_test'"

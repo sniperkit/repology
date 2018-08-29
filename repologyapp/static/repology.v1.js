@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright (C) 2018 Dmitry Marakasov <amdmi3@amdmi3.ru>
 //
 // This file is part of repology
