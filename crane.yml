@@ -1,0 +1,7 @@
+---
+services:
+
+groups:
+  default:
+  - repology
+  - postgres

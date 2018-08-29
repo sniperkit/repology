@@ -4,6 +4,17 @@
 
 Needed for the core:
 
+brew install libversion 
+brew install rsync 
+brew install wget
+brew uninstall tcl-tk
+brew install tcl-tk --with-threads
+
+
+pip install --no-cache --no-cache-dir -U pip 
+pip install --no-cache --no-cache-dir -U pyyaml requests Jinja2 libversion rubymarshal lxml rpm
+pip install --no-cache --no-cache-dir -U flask pillow psycopg2 pytz pytidylib voluptuous flake8 flake8-builtins flake8-import-order flake8-quotes
+
 - [Python](https://www.python.org/) 3.6+
 - Python module [pyyaml](http://pyyaml.org/)
 - Python module [requests](http://python-requests.org/)
